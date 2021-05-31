@@ -1,8 +1,12 @@
 var linguagem = "javascript"
 
-if (linguagem == "javascript"){
-    console.log("Estou aprendendo")
+function teste_linguagem(linguagem){
+    if (linguagem == "javascript"){
+        console.log("Estou aprendendo")
+    }
+    else {
+        console.log("Aprenderei mais tarde")
+    }
 }
-else {
-    console.log("Aprenderei mais tarde")
-}
+
+teste_linguagem(linguagem);

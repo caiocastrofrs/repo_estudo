@@ -5,6 +5,10 @@ var altura = 1.83
 var plano = false
 var imc = 0
 
-imc = Math.round(peso / (altura * altura))
+function calculo_imc (peso, altura){
+    var imc;
+    imc = Math.round(peso / (altura * altura))
+    return imc;
+}
 
-console.log(`IMC do ${nome} é de ${imc}`)
+console.log(`IMC do ${nome} é de ${calculo_imc(peso,altura)}`)
