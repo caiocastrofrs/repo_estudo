@@ -5,7 +5,8 @@ var altura = 1.83
 var plano = false
 var imc = 0
 
-function calculo_imc (peso, altura){
+function calculo_imc (peso, altura)
+{
     var imc;
     imc = Math.round(peso / (altura * altura))
     return imc;
