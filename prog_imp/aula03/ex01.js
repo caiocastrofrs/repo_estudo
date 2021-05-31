@@ -7,4 +7,17 @@ var peso = 75;
 var temFaculdade = false;
 var ehFeio = false;
 
-console.log(nome);
+console.log(typeof nome);
+console.log(typeof idade);
+console.log(typeof peso);
+console.log(typeof temFaculdade);
+console.log(typeof ehFeio);
+
+function alteraIdade(idade)
+{
+    idade++;
+    console.log(idade);
+}
+
+alteraIdade(idade);
+
