@@ -1,6 +1,3 @@
-var altura = 1.83;
-var estaAcompanhada = true;
-
 function podeSubir(alt,estaAcom)
 {
     if(alt > 1.4 && alt < 2)
