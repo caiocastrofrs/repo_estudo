@@ -10,3 +10,4 @@ if (status == true)
 else {
     console.log("variavel sem valor algum")
 }
+
