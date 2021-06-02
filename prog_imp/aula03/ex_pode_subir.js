@@ -21,8 +21,10 @@ function podeSubir(alt,estaAcom)
     }
 }
 podeSubir(1.42,true);
+podeSubir(1.42,false);
 podeSubir(1.10,true);
 podeSubir(1.10,false);
+podeSubir(1.30,true);
 podeSubir(1.30,false);
+podeSubir(2,true);
 podeSubir(2,false);
-podeSubir(1.35,true);
