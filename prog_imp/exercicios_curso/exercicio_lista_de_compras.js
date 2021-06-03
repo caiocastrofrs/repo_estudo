@@ -9,7 +9,7 @@ console.log("Pop remove o ultimo elemento de um array e o retorna")
 console.log(lista_compras.pop())
 
 //TESTE DO PUSH
-console.log("Push adiciona um elemento para o array sendo ele o ultimo da lista e retorna a sua posição")
+console.log("Push adiciona um elemento para o array sendo ele o ultimo da lista e retorna o tamanho do array")
 console.log(lista_compras.push('desodorante'))
 
 //TESTE DO SHIFT
@@ -17,5 +17,6 @@ console.log("Shift remove o primeiro elemento de um array e o retorna")
 console.log(lista_compras.shift())
 
 //TESTE DO UNSHIFT
-console.log("Unshift adiciona um elemento no inicio do array e retorna a sua posição")
+console.log("Unshift adiciona um elemento no inicio do array e retorna o tamanho do array")
 console.log(lista_compras.unshift('macarrão'))
+

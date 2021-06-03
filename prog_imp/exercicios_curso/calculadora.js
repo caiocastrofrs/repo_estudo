@@ -1,5 +1,5 @@
-var numero1 = 10;
-var numero2 = 15;
+var numero1 = 12;
+var numero2 = 0;
 
 function calcmat(n1,n2,tipo){
     if (tipo == 'soma')
@@ -19,4 +19,5 @@ function calcmat(n1,n2,tipo){
         console.log(n1 / n2);
     }
 }
-calcmat(numero1,numero2,"divisao");
+
+let resultado = calcmat(5,5,'soma')
