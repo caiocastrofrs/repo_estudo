@@ -1,14 +1,15 @@
-function podeSubir(alt,estaAcom)
+
+function podeSubir(altura,estaAcompanhado)
 {
-    if(alt > 1.4 && alt < 2)
+    if(altura > 1.4 && altura < 2)
     {
         console.log("Pode subir!");
     }
-    else if(alt < 1.4 && alt > 1.2 && estaAcom == true)
+    else if(altura < 1.4 && altura > 1.2 && estaAcompanhado == true)
     {
         console.log("Pode subir com acompanhante!");
     }
-    else if(alt <1.2)
+    else if(altura <1.2)
     {
         console.log("Não pode subir!");
     }
