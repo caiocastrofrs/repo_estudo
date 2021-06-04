@@ -1001,14 +1001,23 @@ senhas = [
     ,"9-13 p: bppxpjpmpwcpppdprpp"]
 
 let cont_senhas = 0
+let cont_senhas_2 = 0
 
 for (i = 0; i <= senhas.length-1; i++)
 {
-    //index para recuperar a letra
+    //INDEX PARA RECUPERAR A LETRA
     index_letra = senhas[i].search(":")-1
-    //letra recuperada e armazenada na variavel letra
+    
+    //LETRA SELECIONADA E RECUPERADA E ARMAZENADA NA VARIVAVEL LETRA
     letra = senhas[i].charAt(index_letra)
+    
+    //INICIANDO A VARIAVEL QUE VAI ARMAZENAR A QUANTIDADE DE LETRAS EM UMA SENHA
     let quant_letra = -1;
+    
+    //VARIAVEIS PARA RECUPERAR APENAS A SENHA
+    primeiro_caractere_senha = senhas[i].search(":") + 2
+    senha_inteira = senhas[i].slice(primeiro_caractere_senha, senhas[i].length)
+
     //RECUPERAR O MINIMO DE LETRAS
     if (senhas[i].charAt(1) >= '0' && senhas[i].charAt(1) <= '9')
     {
@@ -1018,6 +1027,7 @@ for (i = 0; i <= senhas.length-1; i++)
     {
         senha_min = senhas[i].charAt(0)
     }
+    
     //RECUPERAR O MAXIMO DE LETRAS
     if (senhas[i].charAt(4) >= '0' && senhas[i].charAt(4) <= '9')
     {
@@ -1033,6 +1043,7 @@ for (i = 0; i <= senhas.length-1; i++)
         senha_max = senhas[i].charAt(2)
     }
     
+    //FOR FEITO PARA CONTAR QUANTAS LETRAS EXISTE NA STRING
     for (let iLetra = 0; iLetra <= senhas[i].length; iLetra++)
     {
         if (senhas[i].slice(iLetra,iLetra+1) == letra)
@@ -1040,13 +1051,28 @@ for (i = 0; i <= senhas.length-1; i++)
             quant_letra++;
         }
     }
+
+    //CONTA QUANTAS SENHAS SÃO VÁLIDAS
     if (quant_letra >= senha_min && quant_letra <= senha_max)
     {
         cont_senhas++
     }
+    //SEGUNDA VALIDAÇÃO DAS SENHAS
+    if (senha_inteira.charAt(senha_min-1) == letra && senha_inteira.charAt(senha_max-1) != letra)
+    {
+
+        cont_senhas_2++
+    }
+    else if (senha_inteira.charAt(senha_max-1) == letra && senha_inteira.charAt(senha_min-1) != letra)
+    {
+
+        cont_senhas_2++
+    }
 }
 
-console.log("senhas validas: " + cont_senhas)
+console.log("senhas validas 2:" + cont_senhas_2)
+
+
 
 
 
