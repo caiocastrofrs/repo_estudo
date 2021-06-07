@@ -10,7 +10,7 @@ console.log(lista_compras.pop())
 
 //TESTE DO PUSH
 console.log("Push adiciona um elemento para o array sendo ele o ultimo da lista e retorna o tamanho do array")
-console.log(lista_compras.push('desodorante'))
+console.log(lista_compras.push('desodorante')) 
 
 //TESTE DO SHIFT
 console.log("Shift remove o primeiro elemento de um array e o retorna")

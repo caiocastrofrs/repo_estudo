@@ -5,11 +5,11 @@ function podeSubir(altura,estaAcompanhado)
     {
         console.log("Pode subir!");
     }
-    else if(altura < 1.4 && altura > 1.2 && estaAcompanhado == true)
+    else if(altura <= 1.4 && altura > 1.2 && estaAcompanhado == true)
     {
         console.log("Pode subir com acompanhante!");
     }
-    else if(altura <1.2)
+    else if(altura <= 1.2)
     {
         console.log("Não pode subir!");
     }
