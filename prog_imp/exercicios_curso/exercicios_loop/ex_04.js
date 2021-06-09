@@ -1,15 +1,16 @@
-//Crie um último array, percorra-o, selecione os elementos, salve e mostre-os
+//Crie um último array, percorra-o, selecione os array_letra_as, salve e mostre-os
+//CRIAR BIBLIOTECA DE PALAVRAS E GUARDAR EM OUTRO ARRAY APENAS AS PALAVRAS QUE TEM MAIS DE 2 A OUTPUT: PARALAMA
 let array_letra_a = ['Criticar', 'Funicular', 'Roer', 'Gaiolas', 'Barco', 'Ingredientes','Paralama','','Descalço','Manchar','Pegar'] 
 
 let palavras_selecionadas = []
 
-array_filtro = array_letra_a.map(function (elemento)
+for ( let i = 0; i < array_letra_a.length; i++)
 { 
     var quantidade_a = 0;
-    elemento.toLowerCase()
-    for (let k = 0; k < elemento.length; k++)
+    array_letra_a[i].toLowerCase()
+    for (let k = 0; k < array_letra_a[i].length; k++)
     {
-        if (elemento.slice(k,k+1) == 'a')
+        if (array_letra_a[i].slice(k,k+1) == 'a')
         {
             quantidade_a++;
         }
@@ -17,8 +18,7 @@ array_filtro = array_letra_a.map(function (elemento)
     }
     if (quantidade_a > 2)
     {
-        palavras_selecionadas.push(elemento)
+        palavras_selecionadas.push(array_letra_a[i])
     }
 }
-)
 console.log("Palavras que tem mais de 2 As: " + palavras_selecionadas)
