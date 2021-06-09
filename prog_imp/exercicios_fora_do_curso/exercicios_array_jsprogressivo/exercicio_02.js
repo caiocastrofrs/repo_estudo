@@ -1,20 +1,29 @@
-let arrayNumeros = [123,523,2223]
+let arrayNumeros = [2,1,3]
 
-function ordemCrescente (arrayRecebido)
+function ordem_indice_um_dois (array)
 {
-    console.log("array puro: " + arrayRecebido)
+    if (array[0] > array[1])
+        {
+            [array[0], array[1]] = [array[1],array[0]]
+        }
+}
+function ordemCrescente (arrayRecebido) {
     if (arrayRecebido[0] > arrayRecebido[1] && arrayRecebido[0] > arrayRecebido[2])
     {
-        console.log(arrayRecebido[0] + " " + arrayRecebido[2])
+
         [arrayRecebido[0], arrayRecebido[2]] = [arrayRecebido[2], arrayRecebido[0]]
-        console.log(arrayRecebido[0] + " " + arrayRecebido[2])
-        if (arrayRecebido[0] > arrayRecebido[1])
-        {
-            var guarda_numero = arrayRecebido
-        }
-        
+        ordem_indice_um_dois(arrayRecebido)
+    }
+    else if (arrayRecebido[1] > arrayRecebido[0] && arrayRecebido[1] > arrayRecebido[2])
+    {
+        [arrayRecebido[1], arrayRecebido[2]] = [arrayRecebido[2], arrayRecebido[1]]
+        ordem_indice_um_dois(arrayRecebido)
+    }
+    else if (arrayRecebido[2] > arrayRecebido[0] && arrayRecebido[2] > arrayRecebido[1])
+    {
+        ordem_indice_um_dois(arrayRecebido)
     }
 }
-console.log(arrayNumeros)
-[arrayNumeros[0], arrayNumeros[1]] = [arrayNumeros[1], arrayNumeros[0]];
+
+ordemCrescente(arrayNumeros)
 console.log(arrayNumeros)
