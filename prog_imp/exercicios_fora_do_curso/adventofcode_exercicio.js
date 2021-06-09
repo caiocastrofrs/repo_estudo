@@ -199,8 +199,8 @@ let numeros = [1977
 ,1469
 ,1888]
 //O OBJETIVO DESTE EXERCICIO É ENCONTRAR DENTRO DESSE ARRAY COM 200 NÚMEROS, DOIS NÚMEROS QUE SE SOMADOS DARÁ 2020, A RESPOSTA ESTÁ NO RESULTADO DA MULTIPLICAÇÃO DOS DOIS NÚMEROS
-
 //FOR PARA ENCONTRAR OS DOIS NÚMEROS
+
 for( let i = 0 ; i <= numeros.length-1 ; i++ ){
     for( let i2 = 0 ; i2 <= numeros.length-1 ; i2++ )
     {
@@ -223,6 +223,5 @@ for( let i = 0 ; i <= numeros.length-1 ; i++ ){
             console.log("A resposta é: " + numeros[i] * numeros[i2] * numeros[i3])
             }
         }
-    }
-        
+    }      
 }

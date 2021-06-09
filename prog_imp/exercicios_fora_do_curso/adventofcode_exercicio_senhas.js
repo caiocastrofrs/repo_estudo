@@ -1069,7 +1069,7 @@ for (i = 0; i <= senhas.length-1; i++)
         cont_senhas_2++
     }
 }
-
+console.log("senhas validas:" + cont_senhas)
 console.log("senhas validas 2:" + cont_senhas_2)
 
 
