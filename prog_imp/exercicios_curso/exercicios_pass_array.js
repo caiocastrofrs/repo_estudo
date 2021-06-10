@@ -6,3 +6,5 @@ frutas.map(function (item)
     console.log(item)
 }
 )
+
+console.log("")

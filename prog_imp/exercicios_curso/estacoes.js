@@ -19,4 +19,5 @@ switch (estacoes)
         console.log("Ops, estação invalida");
 }
 
+console.log("")
 

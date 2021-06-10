@@ -13,3 +13,4 @@ switch (fruta){
     default:
         console.log("Fruta não detectada");
 }
+console.log("")
