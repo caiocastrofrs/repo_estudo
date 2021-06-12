@@ -1,4 +1,4 @@
- modelo_carro = "caminhonete";
+modelo_carro = "caminhonete";
 
 switch (modelo_carro){
     case "hatch":
@@ -12,4 +12,6 @@ switch (modelo_carro){
     default:
         console.log("Não trabalhamos com este tipo de automóvel aqui")
 }
+
+
 

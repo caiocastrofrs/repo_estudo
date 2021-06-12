@@ -10,38 +10,36 @@ body {
 }
 #div-top-1{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     
 }
 #div-top-2-4 {
-    margin: 0 auto;
-    height:350px;
-    border: 1px solid red;
+    text-align: center;
+    margin-bottom: 100px;
 }
 #div-top-5-10{
-
+    text-align: center;
+    margin-bottom:30px;
 }
 #img-top-1 {
     height: 300px;
     width: 300px;
     box-shadow: 10px 10px #FDA;
 }
-#img-top-2-4{
+.img-top-2-4{
     height:250px;
     width: 250px;
     box-shadow: 10px 10px #FDA;
-    padding-left: 35px;
 }
-#img-top-5-10{
+.img-top-5-10{
+    height:230px;
+    width: 230px;
+    box-shadow: 10px 10px #FDA;
 
 }
 .div-alinhar {
-    float:left;
-    margin:0 auto;
-}
-.clearBoth {
-    clear:both;
-}
-h2 {
-    text-align: center;
+    width: 25%;
+    height: 100px;
+    display: inline-block;
+    margin-bottom: 230px;
 }
