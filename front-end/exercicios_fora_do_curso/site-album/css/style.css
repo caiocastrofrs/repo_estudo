@@ -2,6 +2,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #0C1713;
     color: #FDA;
+    box-sizing: border-box;
 }
 #header-style {
     margin:150px;
@@ -26,12 +27,12 @@ body {
     width: 300px;
     box-shadow: 10px 10px #FDA;
 }
-.img-top-2-4{
+img.top-2-4{
     height:250px;
     width: 250px;
     box-shadow: 10px 10px #FDA;
 }
-.img-top-5-10{
+img.top-5-10{
     height:230px;
     width: 230px;
     box-shadow: 10px 10px #FDA;
