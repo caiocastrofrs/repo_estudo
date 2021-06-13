@@ -1,0 +1,111 @@
+/* IMPORTANDO A FONTE SPARTAN UTILIZANDO O @IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+
+body {
+    font-family: Spartan;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+div#div-pai {
+
+    margin-top: 182px;
+    margin: 182px 393px;
+}
+
+div#div-esquerda {
+    max-width: 33%;
+    display:inline-block;
+
+}
+div#div-direita {
+    width: 50%;
+    margin-right:0%;
+    float:right;
+}
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-weight: bolder;
+    font-size: 43px;
+    margin-top: 0px;
+}
+p#texto-subtitulo{
+    color:#927b91;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+img.star {
+    margin-left:3px;
+    margin-right: 3px;
+}
+span.star-comment{
+    font-weight: bold;
+    color:hsl(300, 43%, 22%);
+    margin-left:19px;
+    font-size: 17px;
+}
+div.div-estrela {
+    text-align: right;
+    margin-bottom:30px;
+
+
+}
+div#div-cards {
+    
+    margin: 2px 393px 0px;
+
+}
+div#card-1 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 20px;
+    text-align: center;
+    width: 25%;
+    float:left;
+
+}
+div#card-2 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 20px;
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    margin-left:130px;
+    margin-top:40px;
+    
+}
+div#card-3 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 20px;
+    text-align: center;
+    width: 25%;
+    float:right;
+    margin-top:80px;
+}
+p.costumer-feedback {
+    color:hsl(300, 24%, 96%);
+    margin:30px;
+    text-align: left;
+
+}
+div.nome-titulo {
+    display: inline-block;
+}
+img.costumer-photo{
+    border-radius:50px;
+    width: 60px;
+    height: 60px;
+}
+h4.costumer-name {
+    color:hsl(300, 24%, 96%);
+}
+span.title {
+    color: hsl(333, 80%, 67%);
+
+}
+footer {    
+    margin-top: 100px;
+    text-align: center;
+    font-size: 17px;
+    height: 50px;
+}
