@@ -1,108 +1,107 @@
 /* IMPORTANDO A FONTE SPARTAN UTILIZANDO O @IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
-
+/* DEFININDO TIPO DE FONTE PARA A PÁGINA INTEIRA E OO BOX SIZING,
+ ISSO SIGNIFICA QUE O PADDING E A BORDA SÃO INCLUÍDOS NA LARGURA 
+ E ALTURA TOTAL DOS ELEMENTOS*/
 body {
     font-family: Spartan;
-    font-size: 15px;
     box-sizing: border-box;
 }
-
+/* DEFININDO UM ESPAÇO ENTRE A PRIMEIRA DIV E O TOPO E DEIXANDO ELA CENTRALIZADA*/
 div#div-pai {
 
     margin-top: 182px;
     margin: 182px 393px;
 }
-
+/* ISTO AQUI DEFINE O TAMANHO DA DIV DOS ELEMENTOS DO LADO ESQUERDO DA PRIMEIRA DIV E A
+ TRANSFORMA EM INLINE BLOCK PARA FICAR NA MESMA LINHA QUE OS ELEMENTOS DO LADO DIREITO*/
 div#div-esquerda {
     max-width: 33%;
     display:inline-block;
 
 }
+/* ISTO AQUI DEFINE O TAMANHO DA DIV DOS ELEMENTOS DO LADO DIREITO E QUE ELA FLUTUE NO
+ LADO DIREITO DA DIV*/
 div#div-direita {
     width: 50%;
     margin-right:0%;
     float:right;
 }
+/* ISTO ESTILIZA TODAS AS H1, NO CASO, SÓ TEMOS H1 NA DIV-PAI ENTÃO SEM PROBLEMAS EM ALTERAR TODAS AS H1*/
 h1 {
     color: hsl(300, 43%, 22%);
     font-weight: bolder;
     font-size: 43px;
     margin-top: 0px;
 }
+/* ISTO AQUI ESTILIZA O SUBTITULO QUE FICA ABAIXO DO H1*/
 p#texto-subtitulo{
     color:#927b91;
     font-size: 17px;
     line-height: 1.5em;
 }
-img.star {
+/* ISTO AQUI DÁ UM ESPAÇAMENTO INTERNO NAS ESTRELAS*/
+.div-estrela img {
     margin-left:3px;
     margin-right: 3px;
-}
+} 
+/* ISTO AQUI ESTILIZA OS COMENTARIOS QUE FICAM JUNTOS COM AS ESTRELAS*/
 span.star-comment{
     font-weight: bold;
     color:hsl(300, 43%, 22%);
     margin-left:19px;
     font-size: 17px;
 }
+/* ISTO AQUI ALINHA NO LADO DIREITO TODOS OS ELEMENTOS DENTRO DELA QUE SÃO AS ESTRELAS E O SPAN COMENTARIO*/
 div.div-estrela {
     text-align: right;
     margin-bottom:30px;
-
-
 }
+/* ISTO AQUI CENTRALIZA OS CARD QUE ESTÃO DENTRO DESSA DIV E DÁ UM ESPAÇAMENTO SEMELHANTE A DIV-PAI*/
 div#div-cards {
     
     margin: 2px 393px 0px;
-
+    text-align: center;
 }
-div#card-1 {
+/* ISTO AQUI DEFINE AS ESTILIZAÇÕES NOS CARDS*/
+[id*="card-"]{
     background-color: hsl(300, 43%, 22%);
     border-radius: 20px;
     text-align: center;
-    width: 25%;
-    float:left;
-
+    max-width: 25%;
 }
-div#card-2 {
-    background-color: hsl(300, 43%, 22%);
-    border-radius: 20px;
-    text-align: center;
-    width: 25%;
-    display: inline-block;
-    margin-left:130px;
-    margin-top:40px;
-    
-}
-div#card-3 {
-    background-color: hsl(300, 43%, 22%);
-    border-radius: 20px;
-    text-align: center;
-    width: 25%;
-    float:right;
-    margin-top:80px;
-}
+/* ISTO AQUI DEFINE MUDANÇAS INDIVIDUAIS QUE CADA CARD TERÁ*/
+#card-1 {float:left}
+#card-2 {display: inline-block;margin-top: 40px;}
+#card-3 {float:right;margin-top: 80px;}
+/* ISTO AQUI ESTILIZA O TEXTO DO CLIENTE*/
 p.costumer-feedback {
     color:hsl(300, 24%, 96%);
     margin:30px;
     text-align: left;
 
 }
+/* ISTO AQUI POSICIONA O DIV QUE CONTEM O TITULO E O NOME DO CLIENTE*/
 div.nome-titulo {
     display: inline-block;
 }
+/* ISTO AQUI ESTILIZA A FOTO DO CLIENTE*/
 img.costumer-photo{
     border-radius:50px;
     width: 60px;
     height: 60px;
 }
+/* ISTO AQUI ESTILIZA O NOME DO CLIENTE*/
 h4.costumer-name {
     color:hsl(300, 24%, 96%);
 }
+/* ISTO AQUI ESTILIZA O TITULO DO CLIENTE*/
 span.title {
     color: hsl(333, 80%, 67%);
 
 }
+/* ISTO AQUI FAZ MODIFICAÇÕES NO FOOTER DA PÁGINA*/
 footer {    
     margin-top: 100px;
     text-align: center;
