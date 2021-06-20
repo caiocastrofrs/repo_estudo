@@ -1,3 +1,5 @@
+const aluno = require("./objeto_aluno")
+
 let curso =
 {
     curso: "Fullstack",
