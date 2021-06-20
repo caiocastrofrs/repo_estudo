@@ -44,4 +44,4 @@ let fatorial_otimizado = numero =>
     }
     
 }
-fatorial_otimizado(5)
+console.log(fatorial_otimizado(5))
