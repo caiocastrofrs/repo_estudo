@@ -15,4 +15,4 @@ function calculo_imc (peso, altura)
 console.log(`IMC do ${nome} é de ${calculo_imc(peso,altura)}`)
 
 
-module.exports = calculo_imc
+module.exports = calculo_imc, altura
