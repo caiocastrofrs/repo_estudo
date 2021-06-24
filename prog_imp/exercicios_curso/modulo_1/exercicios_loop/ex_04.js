@@ -1,5 +1,6 @@
 //Crie um último array, percorra-o, selecione os array_letra_as, salve e mostre-os
-//CRIAR BIBLIOTECA DE PALAVRAS E GUARDAR EM OUTRO ARRAY APENAS AS PALAVRAS QUE TEM MAIS DE 2 A OUTPUT: PARALAMA
+//CRIAR BIBLIOTECA DE PALAVRAS E GUARDAR EM OUTRO ARRAY APENAS AS PALAVRAS QUE TEM MAIS DE 2 'A' 
+//OUTPUT: PARALAMA
 let array_letra_a = ['Criticar', 'Funicular', 'Roer', 'Gaiolas', 'Barco', 'Ingredientes','Paralama','','Descalço','Manchar','Pegar'] 
 
 let palavras_selecionadas = []

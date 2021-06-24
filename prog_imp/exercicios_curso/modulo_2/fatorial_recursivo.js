@@ -38,7 +38,6 @@ let fatorial_otimizado = numero =>
         return 1
     }
     else {
-        
         return numero*fatorial_otimizado(numero-1)
         
     }

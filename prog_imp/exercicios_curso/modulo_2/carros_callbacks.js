@@ -4,5 +4,6 @@ let andar = () => console.log("o carro está andando");
 
 let parar = () => console.log("o carro parou");
 
-acaoCarro(parar);
+acaoCarro(andar);
+
 
