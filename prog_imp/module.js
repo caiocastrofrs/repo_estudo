@@ -6,6 +6,7 @@ module.exports.pessoa =
 
 module.exports.cachorro = 
 {
+    
     nome: 'dog',
     idade: 5
 }
