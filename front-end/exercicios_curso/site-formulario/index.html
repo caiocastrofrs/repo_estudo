@@ -6,17 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Formularios</title>
+    <style>
+/*          a:link 
+        {
+            background-color: rgb(234, 0, 255);
+            border-color: rgb(161, 17, 89);
+            color: red;
+        }
+          */
+/*          a:visited
+         {
+          background-color: rgb(234, 0, 255);
+          border-color: rgb(161, 17, 89);
+          color: red;  
+         } */
+         a:hover
+         {
+            background-color: gold;
+            font-size: 50px;
+         }
+        div 
+        {
+            border: 2px solid blue;
+        }
+    </style>
 </head>
 <body>
-    <h1>Faça o login</h1>
-    <fieldset>
-        <form class="form-style"> 
+    <h1>UTILIZANDO TAGS DE FORMULÁRIO</h1>
+    <form action ="/registro" method="POST">
+        <fieldset> 
             <label for="login" > Login:</label>
-            <input type="text" id="login" placeholder="Digite seu login"><br><br>
+            <input type="text" name="login" placeholder="Digite seu login"><br><br>
+            
             <label for="senha" > Senha:</label>
-            <input type="text" id="senha" placeholder="Digite sua senha"><br><br>
+            <input type="password" name="senha" placeholder="Digite sua senha"><br><br>
+            
+            <label for="email" > Email:</label>
+            <input type="email" name="email" placeholder="Digite seu email"><br><br>
+
+            <label for="idade"> Idade:</label>
+            <input type="number" name="idade" placeholder="Digite sua idade:"><br><br>
+
+            <label for="formacao"> Formação:</label>
+            <select name="formacao">
+                <option value="#">Front-End</option>
+                <option value="#">Back-End</option>
+                <option value="#">Fullstack</option>
+            </select><br><br>
+
+            <label for="horario-estudo"> Horário de estudo:</label><br><br>
+
+            <input type="radio" name="horario" value="manha"> 
+            <label for="horario">Manhã</label>
+
+            <input type="radio" name="horario" value="tarde">           
+            <label for="horario">Tarde</label>
+
+            <input type="radio" name="horario" value="noite">
+            <label for="horario">Noite</label><br><br>
+
+            <label for="hobbies">Hobbies:</label><br>
+            <label for="hobbies">Pintura</label>
+            <input type="checkbox" name="hobbies" values="Pintura"><br>
+
+            <label for="hobbies">Jogos</label>
+            <input type="checkbox" name="hobbies" values="Jogos"><br>
+
+            <label for="hobbies">Corrida</label>
+            <input type="checkbox" name="hobbies" values="Corrida"><br>
+
+            <label for="hobbies">Quebra-cabeças</label>
+            <input type="checkbox" name="hobbies" values="Quebra-cabeças"><br>
+            
+            <label for="hobbies">Pesca</label>
+            <input type="checkbox" name="hobbies" values="Pesca"><br>
+            
+
+            <label for="feedback"> FEEDBACK!</label><br><br>
+            <textarea name="feedback" cols="30" rows="10" placeholder="Nos dê um feedback"></textarea><br><br>
             <input type="button" value="Enviar">
-        </form>
-    </fieldset> 
+        </fieldset>
+    </form> 
+
+    <div>
+        <a href="#">LINK</a>
+    </div>
 </body>
 </html>
