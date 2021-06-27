@@ -10,20 +10,28 @@
 
 let arrayValores = [1,undefined,null,12,"caio","","bubbles",0, true, false]
 
-const cleanArray = array => 
+const limparArray = array =>
 {
-    for (let i = 0; i < array.length; i++)
+    let array_limpo = array.map((el) =>
     {
-        if (array[i] === undefined || array[i] === null || array[i] === "" || array[i] === false || array[i] == 0)
+        if (el == undefined || el == null || el == "" || el == false || el == 0)
         {
-            array.splice(i,1)
         }
-    }
-    return array
+        else
+        {
+            return el
+        }
+    })
+
+    return array_limpo
 }
 /* console.log(cleanArray(arrayValores)) */
 
 //SOLUÇÃO DO SITE
 
-const compact = (array) => array.filter((el) => el);
+const compact = (array) => 
+{
+    array.filter((el) => el);
+}
+
 console.log(compact(arrayValores))
