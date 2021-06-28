@@ -34,3 +34,6 @@ arrayAnimais.forEach((el) =>
 {
     console.log('O animal é ' + el)
 })
+
+
+
