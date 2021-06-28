@@ -1,19 +1,17 @@
-const comidas = [['Pipoca',10],['Macarrão',8],['Carne',15],['Feijão',12],['Brigadeiro',8]]
-
-const checarTempo = (prato) => 
+const checarTempo = (prato,tempoDado) => 
 {
     switch(prato)
     {
         case 'Pipoca':
-            if (comidas[0][2] > comidas[0][1]*3)
+            if (tempoDado > 10*3)
             {
                 console.log('KABUM!!!')
             }
-            else if (comidas[0][2] > comidas[0][1]*2)
+            else if (tempoDado > 10*2)
             {
                 console.log('Comida queimou!')
             }
-            else if (comidas[0][2] < comidas[0][1])
+            else if (tempoDado < 10)
             {
                 console.log('Tempo insuficiente!')
             }
@@ -23,15 +21,15 @@ const checarTempo = (prato) =>
             }
             break;
         case 'Macarrão':
-            if (comidas[1][2] > comidas[1][1]*3)
+            if (tempoDado > 8*3)
             {
                 console.log('KABUM!!!')
             }
-            else if (comidas[1][2] > comidas[1][1]*2)
+            else if (tempoDado > 8*2)
             {
                 console.log('Comida queimou!')
             }
-            else if (comidas[1][2] < comidas[1][1])
+            else if (tempoDado < 8)
             {
                 console.log('Tempo insuficiente!')
             }
@@ -41,15 +39,15 @@ const checarTempo = (prato) =>
             }
             break;
         case 'Carne':
-            if (comidas[2][2] > comidas[2][1]*3)
+            if (tempoDado > 15*3)
             {
                 console.log('KABUM!!!')
             }
-            else if (comidas[2][2] > comidas[2][1]*2)
+            else if (tempoDado > 15*2)
             {
                 console.log('Comida queimou!')
             }
-            else if (comidas[2][2] < comidas[2][1])
+            else if (tempoDado < 15)
             {
                 console.log('Tempo insuficiente!')
             }
@@ -59,15 +57,15 @@ const checarTempo = (prato) =>
             }
             break;
         case 'Feijão':
-            if (comidas[3][2] > comidas[3][1]*3)
+            if (tempoDado > 12*3)
             {
                 console.log('KABUM!!!')
             }
-            else if (comidas[3][2] > comidas[3][1]*2)
+            else if (tempoDado > 12*2)
             {
                 console.log('Comida queimou!')
             }
-            else if (comidas[3][2] < comidas[3][1])
+            else if (tempoDado < 12)
             {
                 console.log('Tempo insuficiente!')
             }
@@ -77,15 +75,15 @@ const checarTempo = (prato) =>
             }
             break;
         case 'Brigadeiro':
-            if (comidas[4][2] > comidas[4][1]*3)
+            if (tempoDado > 8*3)
             {
                 console.log('KABUM!!!')
             }
-            else if (comidas[4][2] > comidas[4][1]*2)
+            else if (tempoDado > 8*2)
             {
                 console.log('Comida queimou!')
             }
-            else if (comidas[4][2] < comidas[4][1])
+            else if (tempoDado < 8)
             {
                 console.log('Tempo insuficiente!')
             }
@@ -99,65 +97,35 @@ const checarTempo = (prato) =>
             break;
     }
 }
-
-const alterarTempo = (prato,tempo) =>
-{
-    switch(prato)
-    {
-        case 'Pipoca':
-            comidas[0][2] = tempo
-            checarTempo('Pipoca')
-            break;
-        case 'Macarrão':
-            comidas[1][2] = tempo
-            checarTempo('Macarrão')
-            break;
-        case 'Carne':
-            comidas[2][2] = tempo
-            checarTempo('Carne')
-            break;
-        case 'Feijão':
-            comidas[3][2] = tempo
-            checarTempo('Feijão')
-            break;
-        case 'Brigadeiro':
-            comidas[4][2] = tempo
-            checarTempo('Brigadeiro')
-            break;
-        default:
-            console.log('Prato inexistente')
-            break;
-    }
-}
-
 //PIPOCA
 console.log('-----PRATO PIPOCA-----')
-alterarTempo('Pipoca',100)
-alterarTempo('Pipoca',25)
-alterarTempo('Pipoca',1)
-alterarTempo('Pipoca',11)
+checarTempo('Pipoca',100)
+checarTempo('Pipoca',25)
+checarTempo('Pipoca',1)
+checarTempo('Pipoca',11)
 //MACARRAO
 console.log('-----PRATO MACARRÃO-----')
-alterarTempo('Macarrão',100)    
-alterarTempo('Macarrão',17)
-alterarTempo('Macarrão',1)
-alterarTempo('Macarrão',11)
+checarTempo('Macarrão',100)    
+checarTempo('Macarrão',17)
+checarTempo('Macarrão',1)
+checarTempo('Macarrão',11)
 //CARNE
 console.log('-----PRATO CARNE-----')
-alterarTempo('Carne',100)    
-alterarTempo('Carne',31)
-alterarTempo('Carne',1)
-alterarTempo('Carne',17)
+checarTempo('Carne',100)    
+checarTempo('Carne',31)
+checarTempo('Carne',1)
+checarTempo('Carne',17)
 //FEIJÃO
 console.log('-----PRATO FEIJÃO-----')
-alterarTempo('Feijão',100)    
-alterarTempo('Feijão',25)
-alterarTempo('Feijão',1)
-alterarTempo('Feijão',13)
+checarTempo('Feijão',100)    
+checarTempo('Feijão',25)
+checarTempo('Feijão',1)
+checarTempo('Feijão',13)
+
 //BRIGADEIRO
 console.log('-----PRATO BRIGADEIRO-----')
-alterarTempo('Brigadeiro',100)    
-alterarTempo('Brigadeiro',17)
-alterarTempo('Brigadeiro',1)
-alterarTempo('Brigadeiro',15)
-
+checarTempo('Brigadeiro',100)    
+checarTempo('Brigadeiro',17)
+checarTempo('Brigadeiro',1)
+checarTempo('Brigadeiro',15) 
+ 
