@@ -7,11 +7,13 @@
     box-sizing: border-box;
 
 }
+
 body 
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #F9F0F2;
 }
+
 #nav-content
 {
     padding:25px;
@@ -48,19 +50,8 @@ nav > a:hover
     box-shadow: 1px 1px 15px 15px #EDD4DA;
     border-radius: 20px;
 }
-#conteudo-bio > img 
+section > img
 {
-    max-width:100%;
-    width:325px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    
-    display:inline-block;
+    border-radius: 20px;
+    max-width: 100%;
 }
-/* #conteudo-bio > span 
-{
-    font-weight; 700;
-    font-size: 40px;
-    display:inline-block;
-    float:right;
-} */
