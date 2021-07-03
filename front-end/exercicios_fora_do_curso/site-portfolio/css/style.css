@@ -14,14 +14,19 @@ body
     background-color: #F9F0F2;
 }
 
+.container
+{
+    margin:50px;
+    max-height: 90vh;
+    background-color:#fff;
+    overflow-y:scroll;
+    padding-bottom:70px;
+}
+
 #nav-content
 {
     padding:25px;
-    position: fixed;
-    top: 0;
     text-align: center;
-    left: 50%;
-    transform: translate(-50%);
     background-color: rgba(f,f,f,1);
 }
 
@@ -43,14 +48,29 @@ nav > a:hover
 #conteudo-bio
 {
     width:50%;
-    margin-top: 350px;
+    margin-top: 150px;
     margin-left:auto;
     margin-right:auto;
     background-color: #F3F5F7;
     box-shadow: 1px 1px 15px 15px #EDD4DA;
     border-radius: 20px;
 }
-section > img
+
+.div-img
+{
+    display:inline-block;
+    border:1px solid red;
+}
+
+.div-bio-texto
+{
+    display:inline-block;
+
+    border:1px solid red;
+    text-align:center;
+}
+
+.div-img > img
 {
     border-radius: 20px;
     max-width: 100%;
