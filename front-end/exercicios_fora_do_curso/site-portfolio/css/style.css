@@ -54,22 +54,28 @@ nav > a:hover
     background-color: #F3F5F7;
     box-shadow: 1px 1px 15px 15px #EDD4DA;
     border-radius: 20px;
+    max-width: 100%;
 }
 
 .div-img
 {
     display:inline-block;
-    border:1px solid red;
 }
 
 .div-bio-texto
 {
     display:inline-block;
-
-    border:1px solid red;
+    width:50%;
+    vertical-align:top;
+    margin-top:7%;
+    margin-left:7%;
     text-align:center;
 }
-
+.div-bio-texto > p
+{
+    font-weight: 500;
+    font-size: 1.5em;
+}
 .div-img > img
 {
     border-radius: 20px;
