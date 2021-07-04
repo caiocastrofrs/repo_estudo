@@ -12,12 +12,4 @@ for (let i = 0; i < coluna; i++)
     }
 
 }
-/* console.log(array) */
-
-let array22 = [
-    {nome : 'caio',idade : 22},
-    {nome : 'icaro',idade : 21},
-    {nome : 'adso',idade : 33},
-    {nome : 'diego',idade: 31}
-]
-console.log(array22.nome)
+console.log(array)

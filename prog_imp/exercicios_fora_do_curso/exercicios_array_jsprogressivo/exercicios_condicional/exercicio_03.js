@@ -1,6 +1,6 @@
 //Faça um script que leia três números inteiros e mostre o maior deles.
 
-let numero1 = 400,numero2 = 500, numero3 = 300;
+let numero1 = 500,numero2 = 400, numero3 = 300;
 
 if (numero1 > numero2 && numero3)
 {

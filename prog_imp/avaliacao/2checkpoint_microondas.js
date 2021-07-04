@@ -97,6 +97,7 @@ const checarTempo = (prato,tempoDado) =>
             break;
     }
 }
+
 //PIPOCA
 console.log('-----PRATO PIPOCA-----')
 checarTempo('Pipoca',100)
@@ -128,4 +129,3 @@ checarTempo('Brigadeiro',100)
 checarTempo('Brigadeiro',17)
 checarTempo('Brigadeiro',1)
 checarTempo('Brigadeiro',15) 
- 
