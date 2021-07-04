@@ -1,83 +1,61 @@
-* 
+*
 {
-    padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
+    padding: 0;
     box-sizing: border-box;
-
 }
 
-body 
+.main-container 
 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #F9F0F2;
+    margin:45px;
+    border: 1px solid red;
+    height: 90vh;
+    overflow:scroll;
 }
-
-.container
+.bio-container
 {
-    margin:50px;
-    max-height: 90vh;
-    background-color:#fff;
-    overflow-y:scroll;
-    padding-bottom:70px;
-}
-
-#nav-content
-{
-    padding:25px;
+    border: 1px solid red;
+    width:20%;
+    height:inherit;
+    position:fixed;
     text-align: center;
-    background-color: rgba(f,f,f,1);
 }
-
-nav > a 
+.foto
 {
-    margin: 5px;
-    font-size: 25px;
-    padding: 25px;
-    display:inline-block;
-    border-bottom: 3px solid #191919;
-    color: #191919;
-}
-
-nav > a:hover
-{
-    background-color: #F3E2E6;
-}
-
-#conteudo-bio
-{
-    width:50%;
-    margin-top: 150px;
-    margin-left:auto;
-    margin-right:auto;
-    background-color: #F3F5F7;
-    box-shadow: 1px 1px 15px 15px #EDD4DA;
-    border-radius: 20px;
+    border-radius: 50%;
+    border: 1px solid red;
+    margin-top:20px;
     max-width: 100%;
 }
-
-.div-img
-{
-    display:inline-block;
-}
-
-.div-bio-texto
-{
-    display:inline-block;
-    width:50%;
-    vertical-align:top;
-    margin-top:7%;
-    margin-left:7%;
-    text-align:center;
-}
-.div-bio-texto > p
+.bio-container > p 
 {
     font-weight: 500;
-    font-size: 1.5em;
+    font-size:1.2em;
+    margin:25px;
 }
-.div-img > img
+.socialmedia-icon
 {
-    border-radius: 20px;
-    max-width: 100%;
+    margin:15px;
+}
+.conteudo-container
+{
+
+    margin-left:21.2%;
+    border: 1px solid red;
+    height:inherit;
+}
+nav
+{
+    border:1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding:45px;
+}
+nav > a
+{
+    font-size:1.2em;
+    border: 1px solid red;
+    padding:25px;
+    margin:20px;
 }
