@@ -1,61 +1,83 @@
+/*IMPORTANDO A FONTE KANIT*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@500&display=swap');
+/*RESETANDO AS CONFIGURAÇÕES PADRÕES DOS ELEMENTOS*/
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
-
+/*BACKGROUND PRETO E A DEFININDO A FONTE*/
+body
+{
+    background-color: #191919;
+    font-family: 'Kanit';
+}
+/*DIFININDO CONFIGURAÇÕES DO CONTAINER PRINCIPAL*/
 .main-container 
 {
     margin:45px;
-    border: 1px solid red;
     height: 90vh;
     overflow:scroll;
 }
+/*ESTILIZANDO O CONTAINER DA BIO*/
 .bio-container
 {
-    border: 1px solid red;
     width:20%;
     height:inherit;
     position:fixed;
     text-align: center;
+    background-color: #344966;
 }
+/*ESTILIZANDO A FOTO*/
 .foto
 {
     border-radius: 50%;
-    border: 1px solid red;
-    margin-top:20px;
+    margin-top:50%;
     max-width: 100%;
+    width: 150px;
 }
+/*ESTILIZANDO TODOS OS P DENTRO DO BIO-CONTAINER*/
 .bio-container > p 
 {
     font-weight: 500;
     font-size:1.2em;
     margin:25px;
+    
 }
+/*ESTILIZANDO OS ICONES DAS REDES SOCIAIS*/
 .socialmedia-icon
 {
     margin:15px;
 }
+/*ESTILIZANDO O CONTAINER DO CONTEUDO*/
 .conteudo-container
 {
-
     margin-left:21.2%;
-    border: 1px solid red;
     height:inherit;
+    background-color: #456187;
 }
+/*ESTILIZANDO A BARRA DE NAVEGAÇÃO*/
 nav
 {
-    border:1px solid red;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     padding:45px;
+    background-color: #3E5779;
 }
+/*ESTILIZANDO TODOS OS LINKS PRESENTE NA BARRA DE NAVEGAÇÃO*/
 nav > a
 {
     font-size:1.2em;
-    border: 1px solid red;
     padding:25px;
     margin:20px;
+    color: #1A281F;
+}
+nav > a:hover
+{
+    background-color: #FDD55D;
+    border-radius: 20px;
+    transition: color 0.3s ease-in-out;
 }
