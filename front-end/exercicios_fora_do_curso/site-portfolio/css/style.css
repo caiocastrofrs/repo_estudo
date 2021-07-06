@@ -8,18 +8,45 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+/* SELETORES DIRETOS*/
 /*BACKGROUND PRETO E A DEFININDO A FONTE*/
 body
 {
     background-color: #191919;
     font-family: 'Kanit';
+    color:#F0EBD8;
 }
+nav
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding:45px;
+    background-color: #3E5779;
+    box-shadow: 1px 1px 5px #1D2A49;
+}
+/*ESTILIZANDO TODOS OS LINKS PRESENTE NA BARRA DE NAVEGAÇÃO*/
+nav > a
+{
+    font-size:1.2em;
+    padding:25px;
+    margin:20px;
+    color: #F0EBD8;
+}
+nav > a:hover
+{
+    border-bottom: 2px solid #1D2A49;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+/* CLASSES */
 /*DIFININDO CONFIGURAÇÕES DO CONTAINER PRINCIPAL*/
 .main-container 
 {
     margin:45px;
     height: 90vh;
     overflow:scroll;
+    background-color: #456187;
 }
 /*ESTILIZANDO O CONTAINER DA BIO*/
 .bio-container
@@ -37,6 +64,7 @@ body
     margin-top:50%;
     max-width: 100%;
     width: 150px;
+    height:150px;
 }
 /*ESTILIZANDO TODOS OS P DENTRO DO BIO-CONTAINER*/
 .bio-container > p 
@@ -57,27 +85,52 @@ body
     margin-left:21.2%;
     height:inherit;
     background-color: #456187;
+    text-align:center;
 }
 /*ESTILIZANDO A BARRA DE NAVEGAÇÃO*/
-nav
+.h1-ajuste
 {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding:45px;
-    background-color: #3E5779;
+    margin-top:100px;
 }
-/*ESTILIZANDO TODOS OS LINKS PRESENTE NA BARRA DE NAVEGAÇÃO*/
-nav > a
+
+.projeto
 {
-    font-size:1.2em;
-    padding:25px;
+    display:inline-block;
+    width:45%;
     margin:20px;
-    color: #1A281F;
+    padding:20px;
+    background-color: #0D1321;
+    box-shadow: 1px 1px 15px #1D2A49;
+    vertical-align: top;
 }
-nav > a:hover
+
+.link-botao
 {
-    background-color: #FDD55D;
-    border-radius: 20px;
-    transition: color 0.3s ease-in-out;
+    margin:10px;
+    width:100px;
+    height:35px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F0EBD8;
+    cursor:pointer;
+    font-weight: bold;
+}
+.link-botao:hover
+{
+    box-shadow: 0px 0px 5px white;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* IDs*/
+#projeto-container
+{
+
+    margin: 200px auto;
+    text-align:center;
+
+}
+
+::-webkit-scrollbar 
+{
+    background-color:#3E5779;
 }
