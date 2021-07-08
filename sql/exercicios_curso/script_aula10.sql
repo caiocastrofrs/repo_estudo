@@ -1,6 +1,5 @@
 -- 1) Liste a quantidade de canções existem para cada gênero musical, agrupando a consulta por gênero e ordenando da maior quantidade para a menor.
-SELECT 
-`g`.`nome`, 
+SELECT `g`.`nome`, 
 COUNT(`c`.`nome`) AS `quantidade`
 FROM `generos` AS `g`
 INNER JOIN `cancoes` AS `c`
@@ -8,8 +7,7 @@ ON `g`.`id` = `c`.`id_genero`
 GROUP BY `g`.`nome`
 ORDER BY `quantidade` DESC;
 -- 2) Liste a quantidade de canções existentes para gênero musical, agrupando por gênero. Exiba apenas os genêros que tem mais de 10 canções.
-SELECT 
-`g`.`nome`, 
+SELECT `g`.`nome`, 
 COUNT(`c`.`nome`) AS `quantidade`
 FROM `generos` AS `g`
 INNER JOIN `cancoes` AS `c`
