@@ -10,6 +10,7 @@
 }
 /* SELETORES DIRETOS*/
 /*BACKGROUND PRETO E A DEFININDO A FONTE*/
+
 body
 {
     background-color: #191919;
@@ -47,6 +48,7 @@ nav > a:hover
     height: 90vh;
     overflow:scroll;
     background-color: #456187;
+    display:flex;
 }
 /*ESTILIZANDO O CONTAINER DA BIO*/
 .bio-container
@@ -96,7 +98,7 @@ nav > a:hover
 .projeto
 {
     display:inline-block;
-    width:45%;
+    width: 45%;
     margin:20px;
     padding:20px;
     background-color: #0D1321;
