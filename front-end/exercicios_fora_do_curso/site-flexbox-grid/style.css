@@ -1,0 +1,33 @@
+/* .container-pai 
+{
+    background-color: blanchedalmond;
+    width: 500px;
+    height:500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+}
+.flex-items
+{
+    background-color:blueviolet;
+    width:100px;
+    height:100px;
+    margin:2px;
+} */
+.container-pai
+{
+    background-color: blanchedalmond;
+    width: 100%;
+    height:inherit;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px;
+    grid-gap: 5px;
+}
+
+.flex-items
+{
+    background-color:blueviolet;
+}
