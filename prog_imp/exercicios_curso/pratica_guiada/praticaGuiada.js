@@ -7,6 +7,15 @@ estudantes.forEach(el =>
     {
         curso.adicionarAluno(el)
     })
-console.log(aluno)
-console.log(curso.listaAvaliados())
+curso.listaAvaliados().forEach(el =>
+    {
+        if(el)
+        {
+            console.log("O estudante " + el.nome + " foi aprovado!");
+        }
+        else
+        {
+            console.log("O estudante " + el.nome + " foi reprovado!");
+        }
+    })
 

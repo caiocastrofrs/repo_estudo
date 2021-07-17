@@ -13,27 +13,13 @@ const Curso =
     //PASSO 5 FUNÇÃO QUE RETORNA TRUE OU FALSE CASO O ALUNO SEJA APROVADO OU REPROVADO RESPECTIVAMENTE 
     avaliarAluno: function(aluno)
     {
-       if(aluno.qntd_faltas == 2)
+        if(aluno.qntd_faltas == 2 && aluno.calcularMedia() >= this.nota_aprovacao*1.10)
+        {
+            return true;
+        }
+       else if(aluno.qntd_faltas < 2 && aluno.calcularMedia() >= this.nota_aprovacao)
        {
-           if (aluno.calcularMedia() >= this.nota_aprovacao*1.10)
-           {
-               return true;
-           }
-           else 
-           {
-               return false;
-           }
-       }
-       else if(aluno.qntd_faltas < 2)
-       {
-            if (aluno.calcularMedia() >= this.nota_aprovacao)
-            {
-                return true;
-            }
-            else 
-            {
-                return false;
-            }
+            return true;
        }
        else 
        {
@@ -45,7 +31,10 @@ const Curso =
     {
         let avaliados = this.lista_estudantes.map((el) =>
         {
-            return this.avaliarAluno(el)
+            if (this.avaliarAluno(el))
+            {
+                return el
+            }
         })
         return avaliados
     }
