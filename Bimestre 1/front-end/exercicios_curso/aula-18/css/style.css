@@ -1,0 +1,17 @@
+.wrap p {
+  padding: 10px;
+  margin: 20px;
+}
+
+.p-border {
+  border: dotted 3px #081b68;
+}
+
+.p-background {
+  background: rgba(8, 27, 104, 0.3);
+}
+
+.p-color {
+  color: #081b68;
+}
+/*# sourceMappingURL=style.css.map */
