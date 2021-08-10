@@ -1,5 +1,6 @@
 //DECLARAÇÃO DAS VARIÁVEIS
-let arrayNotas = [10,7,5,7]
+let arrayNotas = [10,7,5,7] 
+let arrayNotas = []
 let somaTotal = 0;
 let media = 0;
 
