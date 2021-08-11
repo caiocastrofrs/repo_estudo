@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Scanner;
 public class Main {
-
+    //GRUPO 2
     public static boolean ePrimo(int number) {
         for(int i = 2; i <= number/2; i++) {
             if(number%i == 0) {
