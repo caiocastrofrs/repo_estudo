@@ -1,6 +1,7 @@
-package com.company;
+package Aula02;
 import java.util.Scanner;
-public class Main {
+
+public class Exercicio_01_02_Aula02 {
     //GRUPO 2
     public static boolean ePrimo(int number) {
         for(int i = 2; i <= number/2; i++) {

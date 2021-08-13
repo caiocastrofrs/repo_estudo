@@ -1,10 +1,15 @@
-package com.company;
+package Aula01;
 
-import java.util.Scanner;
+public class Ex_Estrutura {
 
-public class Main {
+
+    //    public static String dataNasc(String dia, String mes, String ano) {
+//        String data = dia + "/" + mes + "/" + ano;
+//        return data;
+//    }
 
     public static void main(String[] args) {
+        //EXERCICIO UM
 //        int number1 = 1;
 //        int number2 = 2;
 //        if (number1%number2 == 0) {
@@ -13,10 +18,13 @@ public class Main {
 //            System.out.print("No!");
 //
 //        }
+
+
+
+        //EXERCICIO STRING E INTEGER 1 & 2
 //        Integer value1 = 10;
 //        Integer value2 = 30;
 //        int comparar;
-//
 //        if(value1.equals(value2)){
 //            System.out.println("São iguais!");
 //        }else {
@@ -28,6 +36,9 @@ public class Main {
 //                System.out.println("value2 é maior que value1");
 //            }
 //        }
+
+
+
 //        String textOne = "Caio";
 //        String textTwo = new String("caio");
 //
@@ -51,13 +62,20 @@ public class Main {
 //        else {
 //            System.out.println("value04 é maior!");
 //        }
+
+
 //        Scanner scanner;
 //        scanner = new Scanner(System.in);
 //        int number1;
 //        int number2;
 //        float coeficiente;
 //        String nome;
+//        String sobrenome;
 //        char inicial;
+//        String dia;
+//        String mes;
+//        String ano;
+
 //        System.out.println("Digite um numero:");
 //        number1 = scanner.nextInt();
 //        System.out.println("Digite outro numero:");
@@ -65,20 +83,36 @@ public class Main {
 //        System.out.println("Digite o coeficiente:");
 //        coeficiente = scanner.nextFloat();
 //
+
+        //EXERCICIO 1 PRÁTICA INTEGRADORA
 //        System.out.println("Digite seu nome:");
 //        nome = scanner.nextLine();
+//        System.out.println("Digite seu sobrenome:");
+//        sobrenome = scanner.nextLine();
+//        System.out.println("Agora digite sua data de nascimento!");
+//        System.out.println("Dia:");
+//        dia = scanner.nextLine();
+//        System.out.println("Mês:");
+//        mes = scanner.nextLine();
+//        System.out.println("Ano:");
+//        ano = scanner.nextLine();
 //        inicial = nome.charAt(0);
 //        System.out.println(inicial);
-//        String nome = "Caio";
-//        String sobrenome = "Castro";
-//
 //        char inicialNome = nome.charAt(0);
 //        char inicialSobrenome = sobrenome.charAt(0);
-//
-//        System.out.println("nome:" + nome + " " + sobrenome + "\nIniciais: " + inicialNome + " " + inicialSobrenome);
-//        int soma(int number1, number2) {
-//            return number1 + number2;
+//        System.out.println("nome:" + nome + " " + sobrenome + "\nIniciais: " + inicialNome + " " + inicialSobrenome
+//        + "\nData de nascimento: " + dia + "/" + mes + "/" + ano);
+//        System.out.println(dataNasc(dia,mes,ano));
+
+
+
+//        public int soma(int number1, number2) {
+//            int res = number1 + number2;
+//            return res;
 //        }
+
+
+
 //        void mostrarMensagem(String mensagem) {
 //            System.out.println(mensagem);
 //        }
@@ -89,6 +123,10 @@ public class Main {
 //                    return false;
 //                }
 //            }
+
+
+
+        //SWITCH SIMPLES
 //        switch(variavel) {
 //            case valor1:
 //                    //codigo
@@ -100,12 +138,24 @@ public class Main {
 //                    //codigo
 //                    break;
 //        }
+
+
+
+        //FOR SIMPLES
 //        for(Integer i = 0; i<valorMaximo; i++) {
 //            //código
 //        }
+
+
+
+        //FOR DE OBJETO
 //        for(Object object:listaDeObjetos) {
 //            //código
 //        }
+
+
+
+        //WHILE SIMPLES
 //        while(condição) {
 //            //código
 //        }
