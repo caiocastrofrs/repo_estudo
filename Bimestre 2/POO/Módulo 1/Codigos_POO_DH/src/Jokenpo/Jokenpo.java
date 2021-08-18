@@ -4,15 +4,11 @@ import java.util.Scanner;
 
 public class Jokenpo {
 
-    public static void ganhador(String nomeJogador1, String nomeJogador2, int pontosJogador1, int pontosJogador2) {
+    public static int ganhador(int pontosJogador1, int pontosJogador2) {
         if (pontosJogador1 > pontosJogador2 ) {
-            System.out.println("O jogador " + nomeJogador1 + " ganhou a partida!");
-            System.out.println("pontos do " + nomeJogador1 + ": " + pontosJogador1);
-        } else if (pontosJogador2 > pontosJogador1) {
-            System.out.println("O jogador " + nomeJogador2 + " ganhou a partida!");
-            System.out.println("pontos do " + nomeJogador2 + ": " + pontosJogador2);
+            return 1;
         } else {
-            System.out.println("Empate técnico");
+            return 2;
         }
     }
 
@@ -27,11 +23,11 @@ public class Jokenpo {
 
         int pontosJogador1 = 0;
         int pontosJogador2 = 0;
-        int numeroDePartidas = 0;
+        int numeroDeRodadas = 0;
         String escolhaJogador1;
         String escolhaJogador2;
 
-        while(numeroDePartidas < 3) {
+        while(numeroDeRodadas < 3) {
 
             System.out.println(jogador1 + " faça a sua jogada: Pedra/Papel/Tesoura");
             escolhaJogador1 = scanner.nextLine().toLowerCase();
@@ -70,10 +66,15 @@ public class Jokenpo {
                     }
                     break;
             }
-            numeroDePartidas++;
-            ganhador(jogador1,jogador2,pontosJogador1, pontosJogador2);
+            numeroDeRodadas++;
+        }
+        if(ganhador(pontosJogador1, pontosJogador2) == 1) {
+            System.out.println(jogador1 + " ganhou!");
+        } else {
+            System.out.println(jogador2 + " ganhou!");
         }
     }
+
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
