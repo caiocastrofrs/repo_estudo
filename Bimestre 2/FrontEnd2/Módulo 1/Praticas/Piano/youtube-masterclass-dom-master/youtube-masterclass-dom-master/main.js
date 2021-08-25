@@ -49,9 +49,12 @@ function playAudio(audioKeyCode) {
     audio.play();
 }
 //click with mouse 
-keys.forEach(function(key) {
-    key.addEventListener("click", playNote);
-    key.addEventListener("transitionend", removePlayingClass);
-})
-//keyboard type
-window.addEventListener("keydown", playNote);
+function registerEvents() {
+    keys.forEach(function(key) {
+        key.addEventListener("click", playNote);
+        key.addEventListener("transitionend", removePlayingClass);
+    })
+    window.addEventListener("keydown", playNote);
+}
+
+ window.addEventListener("load", registerEvents);

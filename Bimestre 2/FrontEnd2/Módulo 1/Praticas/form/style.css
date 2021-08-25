@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form {
+    width:400px;
+    margin:0 auto;
+    margin-top:100px;
+}
+fieldset {
+
+    width:inherit   ;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    background-color: #f3f3f3;
+    box-shadow: 1px 0px 10px #3f3f3f;
+    border:none;
+    padding:10px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    background-color: white;
+    box-shadow: 1px 0px 4px #3f3f3f;
+    height:25px;
+    border: none;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+    transform: scale(1.2);
+    transition: all 0.5 ease;
+}
+button {
+    margin-top:10px;
+    width:90px;
+    height:32px;
+    background-color: rgb(199, 193, 193);
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #a8eb93;
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+select {
+    border:none;
+    width:150px;
+    font-size:16px;
+    background-color: white;
+    margin:10px;
+}
+
+table {
+    background-color:#f3f3f3;
+    width:500px;
+    margin:0 auto;
+    margin-top:100px;
+}
