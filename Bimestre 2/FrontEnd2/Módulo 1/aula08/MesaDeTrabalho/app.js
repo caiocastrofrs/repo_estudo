@@ -43,6 +43,10 @@ function tirarCorTexto(el) {
 //setar os atributos onmouseover e onmouseout no botão
 btnEnviar.setAttribute("onmouseover","mudarCorTexto(this)")
 btnEnviar.setAttribute("onmouseout","tirarCorTexto(this)")
+
+btnEnviar.onkeyup = function(event){
+    alert("A tecla foi solta: "+ event.key);
+}
 //chamar a funcao naoCarrega
 form.addEventListener('submit', naoCarrega);
 //adicionar toda essa cambada ao html

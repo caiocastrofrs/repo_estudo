@@ -6,3 +6,10 @@
     text-align: center;
     padding:10px;
 }
+.classe-div {
+    width:200px;
+    height:200px;
+    border: 1px solid;
+    display: inline-block;
+    margin: 15px;
+}

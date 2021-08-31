@@ -12,4 +12,18 @@ div1.style.borderRadius = "5px";
 div1.style.boxShadow = "1px 0px 3333px orange";
 div1.style.marginTop = "300px";
 
+let divsCores = document.querySelectorAll('.classe-div');
+divsCores.forEach(function(el){
+    let cor = el.innerText;
+    console.log(cor)
+    if(cor == 'Azul'){
+        el.style.backgroundColor = "blue";
+    }else if (cor == 'Vermelho'){
+        el.style.backgroundColor = "red";
+    }else if (cor == 'Verde'){
+        el.style.backgroundColor = "green";
+    }else {
+        el.style.backgroundColor = "black";
+    }
+});
 
