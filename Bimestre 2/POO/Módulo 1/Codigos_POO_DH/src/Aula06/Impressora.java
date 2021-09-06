@@ -6,6 +6,7 @@ public class Impressora {
     private String tipoConexao;
     private LocalDate dataFabricacao;
     private int folhasDisponiveis;
+
     public Impressora(String modelo, String tipoConexao, LocalDate dataFabricacao) {
         this.modelo = modelo;
         this.tipoConexao = tipoConexao;
