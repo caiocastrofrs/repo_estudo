@@ -1,5 +1,6 @@
 package CheckpointI;
-
+//PROJETO CHECKPOINT I POO EM DUPLA
+//DUPLAS: CAIO CASTRO E CARLINDO JUNIOR
 public class Principal {
     public static void main(String[] args) {
         ClinicaVet petz = new ClinicaVet("Petz","73621");
