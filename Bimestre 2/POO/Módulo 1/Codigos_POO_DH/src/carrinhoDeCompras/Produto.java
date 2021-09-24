@@ -1,4 +1,4 @@
-package Tamagochi;
+package carrinhoDeCompras;
 
 public class Produto {
     private String descricao;

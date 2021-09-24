@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "7e85b2fd-9b64-477a-8d42-05f617f20c36",
+		"name": "Postman_AulaTesting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET_Employees",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"GEORGE R.R. MARTIN\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restool-sample-app.herokuapp.com/api/employee?search=GEORGE R.R. MARTIN&page=1&limit=3",
+					"protocol": "https",
+					"host": [
+						"restool-sample-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employee"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "GEORGE R.R. MARTIN"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_Employees",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://restool-sample-app.herokuapp.com/api/employee",
+					"protocol": "https",
+					"host": [
+						"restool-sample-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_Employees",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"ok\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://restool-sample-app.herokuapp.com/api/employee/DVPDwHlnFjYo",
+					"protocol": "https",
+					"host": [
+						"restool-sample-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employee",
+						"DVPDwHlnFjYo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT_Employees",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restool-sample-app.herokuapp.com/api/employee/t4AWyLHOeYmj",
+					"protocol": "https",
+					"host": [
+						"restool-sample-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employee",
+						"t4AWyLHOeYmj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_GOT",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restool-sample-app.herokuapp.com/api/character?search=caiocaio&page=1&limit=3",
+					"protocol": "https",
+					"host": [
+						"restool-sample-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"character"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "caiocaio"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_GOT",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://restool-sample-app.herokuapp.com/api/character",
+					"protocol": "https",
+					"host": [
+						"restool-sample-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"character"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_GOT",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://restool-sample-app.herokuapp.com/api/character/1tze7sIGzxeT",
+					"protocol": "https",
+					"host": [
+						"restool-sample-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"character",
+						"1tze7sIGzxeT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT_GOT",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restool-sample-app.herokuapp.com/api/character/7iFMCC3AJbTY",
+					"protocol": "https",
+					"host": [
+						"restool-sample-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"character",
+						"7iFMCC3AJbTY"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

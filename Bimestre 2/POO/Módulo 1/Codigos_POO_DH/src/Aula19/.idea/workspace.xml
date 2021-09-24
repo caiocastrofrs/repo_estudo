@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd0ceb33-6fdc-4b10-824b-a039f450df78" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Aula19_Async/FabricaDeCarro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula19_Async/Iphone/Celular.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula19_Async/Iphone/CelularFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula19_Async/Iphone/Iphone11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula19_Async/Iphone/IphoneX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula19_Async/Iphone/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula19_Async/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula19_Async/Refri/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula19_Async/Refri/RefriCola.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula19_Async/Refri/RefriLaranja.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula19_Async/Refri/Refrigerante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula19_Async/Refri/RefrigeranteFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../.idea/repo_estudo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/Codigos_POO_DH/Aula06/Impressora.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/Codigos_POO_DH/Aula06/Impressora.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/Codigos_POO_DH/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/Codigos_POO_DH/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Banco/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Banco/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DH-colecoes/DH-colecoes/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DH-colecoes/DH-colecoes/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DH-operacoes-colecoes/DH-operacoes-colecoes/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DH-operacoes-colecoes/DH-operacoes-colecoes/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DH-relacionamento1paraMuitos/DH-relacionamento1paraMuitos/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DH-relacionamento1paraMuitos/DH-relacionamento1paraMuitos/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../com/company/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../.." />
+  </component>
+  <component name="ProjectId" id="1yP5MqaZ082bMV826bMmQTKUnyC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd0ceb33-6fdc-4b10-824b-a039f450df78" name="Changes" comment="" />
+      <created>1632140339836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632140339836</updated>
+    </task>
+    <servers />
+  </component>
+</project>

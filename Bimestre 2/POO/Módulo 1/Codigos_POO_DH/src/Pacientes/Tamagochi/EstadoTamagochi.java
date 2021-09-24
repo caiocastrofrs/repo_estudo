@@ -1,4 +1,4 @@
-package Tamagochi;
+package Pacientes.Tamagochi;
 
 public interface EstadoTamagochi {
     public void beber();

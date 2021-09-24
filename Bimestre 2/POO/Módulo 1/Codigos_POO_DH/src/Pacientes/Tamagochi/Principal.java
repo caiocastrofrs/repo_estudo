@@ -1,4 +1,4 @@
-package Tamagochi;
+package Pacientes.Tamagochi;
 
 public class Principal {
     public static void main(String[] args) {
