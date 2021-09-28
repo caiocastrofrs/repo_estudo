@@ -15,16 +15,6 @@ public class Principal {
         Circulo circulo5 = new Circulo(1);
         Triangulo triangulo = new Triangulo(2,2);
 
-        retangulo2.calcularArea();
-        circulo4.calcularArea();
-        circulo5.calcularArea();
-        triangulo.calcularArea();
-
-        retangulo.calcularArea();
-        circulo1.calcularArea();
-        circulo2.calcularArea();
-        circulo3.calcularArea();
-
         locomotiva.addConjunto(retangulo2);
         locomotiva.addConjunto(circulo4);
         locomotiva.addConjunto(circulo5);
@@ -38,6 +28,8 @@ public class Principal {
         System.out.println(vagao.calcularArea());
         System.out.println(locomotiva.calcularArea());
 
-
+        vagao.retornarConjunto();
+        System.out.println("\n");
+        locomotiva.retornarConjunto();
     }
 }

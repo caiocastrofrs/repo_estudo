@@ -22,4 +22,10 @@ public class Conjunto implements Trem{
     public void addConjunto(Trem t) {
         this.conjuntos.add(t);
     }
-}
+
+    public void retornarConjunto() {
+        for (Trem t : this.conjuntos) {
+            System.out.println(t);
+        }
+    }
+ }
