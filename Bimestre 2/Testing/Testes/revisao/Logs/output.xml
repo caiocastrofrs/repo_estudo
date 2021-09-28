@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20210928 18:20:59.952" rpa="false" schemaversion="2">
+<suite id="s1" name="Ultimate" source="D:\git_repositorios\repo_estudo\Bimestre 2\Testing\Testes\revisao\Ultimate.robot">
+<test id="s1-t1" name="Teste 06">
+<kw name="Abrir o site UltimateQA" library="Ultimate" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210928 18:21:00.172" level="INFO">Opening browser 'chrome' to base url 'https://ultimateqa.com/simple-html-elements-for-automation/'.</msg>
+<status status="PASS" starttime="20210928 18:21:00.172" endtime="20210928 18:21:03.212"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210928 18:21:03.212" endtime="20210928 18:21:03.336"/>
+</kw>
+<status status="PASS" starttime="20210928 18:21:00.171" endtime="20210928 18:21:03.336"/>
+</kw>
+<kw name="Selecionar o checkbox &quot;Bike&quot;" library="Ultimate">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20210928 18:21:03.337" level="INFO">Selecting checkbox 'name=vehicle'.</msg>
+<status status="PASS" starttime="20210928 18:21:03.337" endtime="20210928 18:21:03.427"/>
+</kw>
+<status status="PASS" starttime="20210928 18:21:03.337" endtime="20210928 18:21:03.427"/>
+</kw>
+<status status="PASS" starttime="20210928 18:21:00.171" endtime="20210928 18:21:03.428"/>
+</test>
+<status status="PASS" starttime="20210928 18:20:59.954" endtime="20210928 18:21:03.431"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ultimate">Ultimate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
