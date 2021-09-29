@@ -2,11 +2,11 @@ package Cursos;
 
 public class Backend implements Curso{
     private String nome;
-    private String descricao;
+    private int descricao;
     private int cargaHoraria;
     private double valorHora;
 
-    public Backend(String nome, String descricao, int cargaHoraria, double valorHora) {
+    public Backend(String nome, int descricao, int cargaHoraria, double valorHora) {
         this.nome = nome;
         this.descricao = descricao;
         this.cargaHoraria = cargaHoraria;
@@ -15,7 +15,7 @@ public class Backend implements Curso{
 
     @Override
     public double getPreco() {
-        return this.cargaHoraria * this.valorHora;
+        return this.cargaHoraria * this.valorHora * this.descricao;
     }
 
     @Override
