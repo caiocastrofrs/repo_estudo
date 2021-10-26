@@ -1,4 +1,4 @@
-package Turismo;
+package Facade__Turismo;
 
 public class Voo {
     private String origem = "Brasil";

@@ -15,6 +15,7 @@ public class ComidaFactory {
 			comida = new ComidaDTO(tipoComida);
 			COMIDA_MAP.put(tipoComida, comida);
 			System.out.println("Creando Objecto de comida tipo: " + tipoComida);
+			System.out.println(COMIDA_MAP);
 			return comida;
 
 		}

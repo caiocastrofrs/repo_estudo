@@ -1,6 +1,6 @@
-package com.dh.pizzaria.service.impl;
+package TemplateMethod__pagamentoSalario.dh.pizzaria.service.impl;
 
-import com.dh.pizzaria.service.Cozinheiro;
+import TemplateMethod__pagamentoSalario.dh.pizzaria.service.Cozinheiro;
 
 public class CozinheiroVeggie extends Cozinheiro {
 

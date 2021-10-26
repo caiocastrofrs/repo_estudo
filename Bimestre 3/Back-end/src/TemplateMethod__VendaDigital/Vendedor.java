@@ -1,4 +1,4 @@
-package VendaDigital;
+package TemplateMethod__VendaDigital;
 
 public abstract class Vendedor {
 

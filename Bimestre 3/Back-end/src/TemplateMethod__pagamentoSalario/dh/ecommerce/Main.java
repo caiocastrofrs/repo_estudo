@@ -1,13 +1,13 @@
-package com.dh.ecommerce;
+package TemplateMethod__pagamentoSalario.dh.ecommerce;
 
-import com.dh.ecommerce.model.Endereco;
-import com.dh.ecommerce.model.Produto;
-import com.dh.ecommerce.model.Cartao;
-import com.dh.ecommerce.service.ICompraService;
-import com.dh.ecommerce.service.impl.ArmazemService;
-import com.dh.ecommerce.service.impl.CompraService;
-import com.dh.ecommerce.service.impl.EnvioService;
-import com.dh.ecommerce.service.impl.PgtoService;
+import TemplateMethod__pagamentoSalario.dh.ecommerce.model.Endereco;
+import TemplateMethod__pagamentoSalario.dh.ecommerce.model.Produto;
+import TemplateMethod__pagamentoSalario.dh.ecommerce.model.Cartao;
+import TemplateMethod__pagamentoSalario.dh.ecommerce.service.ICompraService;
+import TemplateMethod__pagamentoSalario.dh.ecommerce.service.impl.ArmazemService;
+import TemplateMethod__pagamentoSalario.dh.ecommerce.service.impl.CompraService;
+import TemplateMethod__pagamentoSalario.dh.ecommerce.service.impl.EnvioService;
+import TemplateMethod__pagamentoSalario.dh.ecommerce.service.impl.PgtoService;
 
 import java.util.Arrays;
 

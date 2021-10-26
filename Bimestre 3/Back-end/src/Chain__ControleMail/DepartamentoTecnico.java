@@ -1,4 +1,4 @@
-package ControleMail;
+package Chain__ControleMail;
 
 public class DepartamentoTecnico extends Handler{
 

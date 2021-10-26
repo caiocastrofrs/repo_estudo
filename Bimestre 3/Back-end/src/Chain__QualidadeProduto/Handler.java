@@ -1,4 +1,4 @@
-package QualidadeProduto;
+package Chain__QualidadeProduto;
 
 public abstract class Handler {
 

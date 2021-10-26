@@ -1,4 +1,4 @@
-package Turismo;
+package Facade__Turismo;
 //MINHA TENTATIVA DE RESOLVER O EXERCICIO DE TURISMO
 public class main {
     public static void main(String[] args) {

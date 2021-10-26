@@ -1,8 +1,8 @@
-package com.dh.pizzaria;
+package TemplateMethod__pagamentoSalario.dh.pizzaria;
 
-import com.dh.pizzaria.service.Cozinheiro;
-import com.dh.pizzaria.service.impl.CozinheiroNoVeggie;
-import com.dh.pizzaria.service.impl.CozinheiroVeggie;
+import TemplateMethod__pagamentoSalario.dh.pizzaria.service.Cozinheiro;
+import TemplateMethod__pagamentoSalario.dh.pizzaria.service.impl.CozinheiroNoVeggie;
+import TemplateMethod__pagamentoSalario.dh.pizzaria.service.impl.CozinheiroVeggie;
 
 public class Main {
 

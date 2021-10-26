@@ -1,4 +1,4 @@
-package FastFood;
+package TemplateMethod__FastFood;
 //EXERCICIO - MESA DE TRABALHO
 //AULA 02 - TEMPLATE METHOD PATTERN
 public class Main {

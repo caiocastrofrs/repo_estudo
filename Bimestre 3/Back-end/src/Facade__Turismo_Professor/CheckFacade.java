@@ -1,4 +1,4 @@
-package Turismo_Professor;
+package Facade__Turismo_Professor;
 
 public class CheckFacade {
     // Armazenar a instância de cada API na memória

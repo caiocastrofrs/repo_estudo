@@ -1,4 +1,4 @@
-package Turismo;
+package Facade__Turismo;
 
 public class Hotel {
     private String nomeHotel = "Hotel Budapeste";

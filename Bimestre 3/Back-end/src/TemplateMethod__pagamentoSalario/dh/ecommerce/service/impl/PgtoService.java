@@ -1,6 +1,6 @@
-package com.dh.ecommerce.service.impl;
+package TemplateMethod__pagamentoSalario.dh.ecommerce.service.impl;
 
-import com.dh.ecommerce.model.Cartao;
+import TemplateMethod__pagamentoSalario.dh.ecommerce.model.Cartao;
 
 public class PgtoService {
 

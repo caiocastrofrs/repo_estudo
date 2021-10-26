@@ -1,4 +1,4 @@
-package com.dh.pizzaria.service;
+package TemplateMethod__pagamentoSalario.dh.pizzaria.service;
 
 public abstract class Cozinheiro {
 

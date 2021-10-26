@@ -1,4 +1,4 @@
-package com.dh.ecommerce.model;
+package TemplateMethod__pagamentoSalario.dh.ecommerce.model;
 
 public class Cartao {
 

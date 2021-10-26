@@ -1,4 +1,4 @@
-package VendaDigital;
+package TemplateMethod__VendaDigital;
 
 public class Funcionario extends Vendedor{
 

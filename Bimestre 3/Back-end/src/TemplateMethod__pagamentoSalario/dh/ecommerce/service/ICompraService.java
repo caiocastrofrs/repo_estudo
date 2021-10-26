@@ -1,7 +1,7 @@
-package com.dh.ecommerce.service;
+package TemplateMethod__pagamentoSalario.dh.ecommerce.service;
 
-import com.dh.ecommerce.model.Endereco;
-import com.dh.ecommerce.model.Cartao;
+import TemplateMethod__pagamentoSalario.dh.ecommerce.model.Endereco;
+import TemplateMethod__pagamentoSalario.dh.ecommerce.model.Cartao;
 
 public interface ICompraService {
 

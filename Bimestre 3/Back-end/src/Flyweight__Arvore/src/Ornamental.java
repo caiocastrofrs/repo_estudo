@@ -1,7 +1,7 @@
-public class Ornamentais extends Arvore{
+public class Ornamental extends Arvore{
 
-    public Ornamentais(int altura, int largura, String cor) {
+    public Ornamental(int altura, int largura, String cor) {
         super(altura, largura, cor);
     }
-    
+
 }

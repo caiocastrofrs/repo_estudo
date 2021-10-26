@@ -1,4 +1,4 @@
-package VendaDigital;
+package TemplateMethod__VendaDigital;
 
 public class Afiliado extends Vendedor{
 

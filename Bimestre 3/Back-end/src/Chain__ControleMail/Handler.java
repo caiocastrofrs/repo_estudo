@@ -1,4 +1,4 @@
-package ControleMail;
+package Chain__ControleMail;
 
 public abstract class Handler {
     protected Handler seguinteManipulador;

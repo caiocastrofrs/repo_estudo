@@ -1,4 +1,4 @@
-package QualidadeProduto;
+package Chain__QualidadeProduto;
 
 public class Embalagem extends Handler{
 

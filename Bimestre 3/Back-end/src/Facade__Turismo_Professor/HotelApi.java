@@ -1,4 +1,4 @@
-package Turismo_Professor;
+package Facade__Turismo_Professor;
 
 public class HotelApi {
     // Procurar os hoteis de acordo com uma cidade pre definida

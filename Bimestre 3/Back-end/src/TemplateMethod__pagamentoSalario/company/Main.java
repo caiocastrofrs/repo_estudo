@@ -1,4 +1,4 @@
-package com.company;
+package TemplateMethod__pagamentoSalario.company;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.company;
+package TemplateMethod__pagamentoSalario.company;
 
 public abstract class Funcionario {
     // Atributos da classe Funcionário

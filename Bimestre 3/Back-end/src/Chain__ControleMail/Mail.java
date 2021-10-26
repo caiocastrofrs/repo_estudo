@@ -1,4 +1,4 @@
-package ControleMail;
+package Chain__ControleMail;
 
 public class Mail {
     private String origem;

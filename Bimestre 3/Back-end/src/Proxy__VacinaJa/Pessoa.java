@@ -1,4 +1,4 @@
-package VacinaJa;
+package Proxy__VacinaJa;
 
 import java.util.Date;
 

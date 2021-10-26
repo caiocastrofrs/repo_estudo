@@ -1,4 +1,4 @@
-package FastFood;
+package TemplateMethod__FastFood;
 
 public abstract class Cardapio {
     private double precoBase;
