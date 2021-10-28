@@ -1,4 +1,4 @@
-public class Quadrado extends Figura{
+public class Quadrado extends Figuras {
 
     public Quadrado(int tamanho) {
         super(tamanho);

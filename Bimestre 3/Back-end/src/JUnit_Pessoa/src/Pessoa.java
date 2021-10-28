@@ -1,6 +1,8 @@
 import java.time.LocalDate;
-
+import org.apache.log4j.Logger;
 public class Pessoa {
+
+    private static final Logger logger = Logger.getLogger(Pessoa.class);
 
     private String nome;
     private String sobrenome;
@@ -45,20 +47,24 @@ public class Pessoa {
     }
 
     public String getNomeLength() {
+        logger.info("método getNomeLength usado, nome e sobrenome retornado");
         //Número de caracteres do nome
 //        return this.nome.length();
         return sobrenome + ", " + nome;
     }
 
     public boolean checarMaioridade() {
+        logger.info("Maioridade checada");
         //O ano de hoje
         int aux = LocalDate.now().getYear();
         //O ano de nascimento da pessoa
         int res = aux - this.idade.getYear();
         //Validação da maioridade
         if(res > 18) {
+            logger.info("Idade maior que 18");
             return true;
         }
+        logger.info("Idade menor que 18");
         return false;
     }
 

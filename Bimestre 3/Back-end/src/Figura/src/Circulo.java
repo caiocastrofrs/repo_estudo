@@ -1,4 +1,4 @@
-public class Circulo extends Figura{
+public class Circulo extends Figuras {
 
     public Circulo(int tamanho) {
         super(tamanho);
