@@ -1,0 +1,33 @@
+.banner {
+    margin: 100px auto;
+    background-image: url("https://picsum.photos/1000/400");
+    background-position: cover;
+    width: 1000px;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FADFAE;
+  transition: all .3s;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  transform: translate(-50%,-50%);
+}
+button:hover{
+  box-shadow: 1px 5px 10px 1px #000;
+}
+
+h2 {
+  font-size: 25px;
+  color: #f3f3f3;
+}
