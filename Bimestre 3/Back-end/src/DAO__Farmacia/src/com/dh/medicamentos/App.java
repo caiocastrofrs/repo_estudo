@@ -1,2 +1,7 @@
-package com.dh.medicamentos;public class App {
+package com.dh.medicamentos;
+
+public class App {
+    public static void main(String[] args) {
+        System.out.println("Farmácia");
+    }
 }
