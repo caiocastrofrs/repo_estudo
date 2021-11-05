@@ -1,3 +1,5 @@
+package Facade__Supermercado;
+
 public class FacadeDesconto implements IFacadeDesconto{
 
     //Armazenando a instância de cada API na memória

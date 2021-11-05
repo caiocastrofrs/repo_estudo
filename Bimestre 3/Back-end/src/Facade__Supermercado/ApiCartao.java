@@ -1,3 +1,5 @@
+package Facade__Supermercado;
+
 public class ApiCartao {
     public int desconto(Cartao cartao){
         if(cartao.getBanco().compareTo("Star Bank") == 0){

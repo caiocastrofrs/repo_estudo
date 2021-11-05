@@ -1,3 +1,5 @@
+package Facade__Supermercado;
+
 public class ApiQuantidade {
     public int desconto(int quantidade){
         if(quantidade > 12){

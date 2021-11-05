@@ -1,3 +1,5 @@
+package SQL__TabelaDeFiguras.src;
+
 import java.sql.*;
 
 public class Figuras {

@@ -1,3 +1,5 @@
+package Flyweight__Roupas.src;
+
 import java.util.HashMap;
 
 public class FlyweightFactory {

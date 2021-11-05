@@ -1,3 +1,5 @@
+package Facade__Supermercado;
+
 public class Produto {
     private String nome;
     private String tipo;

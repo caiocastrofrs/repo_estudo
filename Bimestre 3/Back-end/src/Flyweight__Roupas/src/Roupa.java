@@ -1,3 +1,5 @@
+package Flyweight__Roupas.src;
+
 public class Roupa {
 
         private String tipo;

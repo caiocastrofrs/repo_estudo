@@ -1,4 +1,6 @@
-public class Circulo extends Figuras {
+package Figura.src;
+
+public class Circulo extends Figura {
 
     public Circulo(int tamanho) {
         super(tamanho);

@@ -1,4 +1,6 @@
-public class Quadrado extends Figuras {
+package Figura.src;
+
+public class Quadrado extends Figura {
 
     public Quadrado(int tamanho) {
         super(tamanho);

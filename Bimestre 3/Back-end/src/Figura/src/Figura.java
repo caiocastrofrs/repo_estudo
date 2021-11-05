@@ -1,3 +1,5 @@
+package Figura.src;
+
 public abstract class Figura {
     private int tamanho;
 

@@ -1,4 +1,7 @@
+package BD_h2__Aula11.src;
+
 import java.sql.*;
+
 public class App {
 
     private static final String sqlCreateTable = "DROP TABLE IF EXISTS ANIMAL; " +
@@ -11,7 +14,7 @@ public class App {
     private static final String sqlDelete = "DELETE FROM ANIMAL WHERE ID = 2";
 
     public static void main(String[] args) throws Exception{
-        Class.forName("org.h2.Driver");
+//        Class.forName("org.h2.Driver");
         Connection con = null;
         try {
             con = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "sa", "");
@@ -34,8 +37,9 @@ public class App {
         }
     }
     private static void showAnimal(Connection con) throws SQLException {
-        String sqlQuery = "SELECT * FROM ANIMAL";
         Statement stat = con.createStatement();
+
+        String sqlQuery = "SELECT * FROM ANIMAL";
         ResultSet rs = stat.executeQuery(sqlQuery);
         while(rs.next()) {
             System.out.println("------------------------------");

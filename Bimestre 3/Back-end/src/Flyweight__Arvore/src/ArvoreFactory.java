@@ -1,3 +1,5 @@
+package Flyweight__Arvore.src;
+
 public class ArvoreFactory {
     private static ArvoreFactory instance;
 

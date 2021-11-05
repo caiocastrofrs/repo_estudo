@@ -1,4 +1,4 @@
-package com.vacina;
+package Proxy__VacinaJa.VacinaJa.src.com.vacina;
 
 public class RegistroVacina implements IRegistro{
 

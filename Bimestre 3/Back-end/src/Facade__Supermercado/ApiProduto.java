@@ -1,3 +1,5 @@
+package Facade__Supermercado;
+
 public class ApiProduto {
     public int desconto(Produto produto){
         if(produto.getTipo().compareTo("Lata") == 0){
