@@ -24,7 +24,7 @@ public class ConfigJDBC {
 
     public ConfigJDBC() {
         this.driver = "org.h2.Driver";
-        this.dbUrl = "jdbc:h2:~/clinica;DB_CLOSE_DELAY=-1;INIT=RUNSCRIPT FROM 'CREATE.SQL'";
+        this.dbUrl = "jdbc:h2:~/clinica;DB_CLOSE_DELAY=-1;INIT=RUNSCRIPT FROM 'src/create.sql'";
         this.user = "sa";
         this.password = "";
     }

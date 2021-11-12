@@ -7,6 +7,6 @@ public interface IDao<T> {
     public T salvar(T t);
     public T buscar(Integer id);
     public void excluir(Integer id);
-    public ArrayList<T> listarTodos();
+    public List<T> listarTodos();
 
 }
