@@ -1,32 +1,29 @@
-package com.digitalhouse.clinicaodonto.dao.impl;
+package com.dh.clinica.repository.impl;
 
-import com.digitalhouse.clinicaodonto.dao.IDao;
-import com.digitalhouse.clinicaodonto.model.Consulta;
+import com.dh.clinica.repository.IDao;
+import com.dh.clinica.model.Consulta;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class ConsultaDaoH2 implements IDao<Consulta>{
+public class ConsultaRepository implements IDao<Consulta> {
 
     private List<Consulta> consultas;
 
-    public ConsultaDaoH2() {
-        this.consultas = new ArrayList<>();
-
+    public ConsultaRepository() {
+        consultas = new ArrayList<>();
     }
 
-
     @Override
-    public Consulta cadastrar(Consulta consulta) {
+    public Consulta salvar(Consulta consulta) {
         consultas.add(consulta);
         return consulta;
     }
 
     @Override
     public Optional<Consulta> buscar(Integer id) {
-        return consultas.stream().filter(
-                consulta -> consulta.getId().equals(id)).findFirst();
+        return consultas.stream().filter(consulta -> consulta.getId().equals(id)).findFirst();
     }
 
     @Override
@@ -35,8 +32,8 @@ public class ConsultaDaoH2 implements IDao<Consulta>{
     }
 
     @Override
-    public List buscarTodos() {
-      return consultas;
+    public List<Consulta> buscarTodos() {
+        return consultas;
     }
 
     @Override

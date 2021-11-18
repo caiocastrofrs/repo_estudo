@@ -1,4 +1,4 @@
-package com.digitalhouse.clinicaodonto.model;
+package com.dh.clinica.model;
 
 import java.util.Date;
 
@@ -10,13 +10,6 @@ public class Consulta {
     private Date date;
 
     public Consulta() {
-
-    }
-
-    public Consulta(Paciente paciente, Dentista dentista, Date date) {
-        this.paciente = paciente;
-        this.dentista = dentista;
-        this.date = date;
     }
 
     public Integer getId() {
@@ -53,7 +46,7 @@ public class Consulta {
 
     @Override
     public String toString() {
-        return "Consulta{" +
+        return "Turno{" +
                 "id=" + id +
                 ", paciente=" + paciente +
                 ", dentista=" + dentista +
