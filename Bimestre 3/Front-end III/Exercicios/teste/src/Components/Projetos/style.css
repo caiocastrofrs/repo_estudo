@@ -1,0 +1,8 @@
+.projetos {
+    margin: 100px auto;
+    background-color: #dfdbdb;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    flex-wrap: wrap;
+}

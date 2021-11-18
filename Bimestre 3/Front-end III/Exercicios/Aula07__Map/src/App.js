@@ -108,11 +108,11 @@ function App() {
             return (
               <>
                 <Greeting user={firstName, lastName} />
-                <Video url="">
-                  Parabens {firstName}.
+                <Video url="https://www.youtube.com/watch?v=xGTq1EPpHCg" title="parabains">
+                  Parabens {firstName} lastName.
                 </Video>
               </>
-            )
+            );
           })
         }
       </div>
