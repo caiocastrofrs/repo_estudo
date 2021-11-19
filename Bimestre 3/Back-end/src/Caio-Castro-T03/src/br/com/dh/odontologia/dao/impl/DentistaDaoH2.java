@@ -3,6 +3,7 @@ package br.com.dh.odontologia.dao.impl;
 import br.com.dh.odontologia.dao.IDao;
 import br.com.dh.odontologia.dao.configuracao.ConfigJDBC;
 import br.com.dh.odontologia.model.Dentista;
+
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;
@@ -11,6 +12,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class DentistaDaoH2 implements IDao<Dentista> {
 
@@ -25,7 +27,12 @@ public class DentistaDaoH2 implements IDao<Dentista> {
                 dentista.getNumeroMatricula(),dentista.getNome(),dentista.getSobrenome());
         try {
             stat = con.createStatement();
-            stat.execute(query);
+            logger.info("Inserindo os dados do dentista...");
+            stat.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
+            ResultSet keys = stat.getGeneratedKeys();
+            while(keys.next()) {
+                dentista.setId(keys.getInt(1));
+            }
             stat.close();
             con.close();
         } catch (SQLException e) {
@@ -39,7 +46,7 @@ public class DentistaDaoH2 implements IDao<Dentista> {
     }
 
     @Override
-    public Dentista buscar(Integer id) {
+    public Optional<Dentista> buscar(Integer id) {
         Connection con = configJDBC.connectDB();
         Statement stat = null;
         String query = String.format("SELECT * FROM dentistas WHERE id = '%s'", id);
@@ -57,7 +64,7 @@ public class DentistaDaoH2 implements IDao<Dentista> {
             e.printStackTrace();
         }
         logger.info("Busca concluída");
-        return dentista;
+        return dentista != null ? Optional.of(dentista) : Optional.empty();
     }
 
     @Override

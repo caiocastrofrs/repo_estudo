@@ -1,12 +1,13 @@
 package br.com.dh.odontologia.dao;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface IDao<T> {
 
-    public T salvar(T t);
-    public T buscar(Integer id);
-    public void excluir(Integer id);
-    public List<T> listarTodos();
+    T salvar(T t);
+    Optional<T> buscar(Integer id);
+    void excluir(Integer id);
+    List<T> listarTodos();
 
 }

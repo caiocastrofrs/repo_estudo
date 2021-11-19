@@ -4,6 +4,7 @@ import br.com.dh.odontologia.dao.IDao;
 import br.com.dh.odontologia.model.Dentista;
 
 import java.util.List;
+import java.util.Optional;
 
 public class DentistaService {
 
@@ -17,7 +18,7 @@ public class DentistaService {
         return dentistaIDao.salvar(dentista);
     }
 
-    public Dentista buscar(Integer id) {
+    public Optional<Dentista> buscar(Integer id) {
         return dentistaIDao.buscar(id);
     }
 

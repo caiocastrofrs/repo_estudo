@@ -1,7 +1,8 @@
 package br.com.dh.odontologia.model;
 
 public class Dentista {
-    
+
+    private Integer id;
     private String numeroMatricula;
     private String nome;
     private String sobrenome;
@@ -12,27 +13,24 @@ public class Dentista {
         this.sobrenome = sobrenome;
     }
 
-    public String getNumeroMatricula() {
-        return numeroMatricula;
+    public Integer getId() {
+        return id;
     }
 
-    public void setNumeroMatricula(String numeroMatricula) {
-        this.numeroMatricula = numeroMatricula;
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNumeroMatricula() {
+        return numeroMatricula;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public String getSobrenome() {
         return sobrenome;
     }
 
-    public void setSobrenome(String sobrenome) {
-        this.sobrenome = sobrenome;
-    }
 }

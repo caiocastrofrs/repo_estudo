@@ -10,20 +10,20 @@ public class ConfigJDBC {
 
     private static final Logger logger = Logger.getLogger(ConfigJDBC.class);
 
-    private String driver;
+    private String jdbcDriver;
     private String dbUrl;
     private String user;
     private String password;
 
-    public ConfigJDBC(String driver, String dbUrl, String user, String password) {
-        this.driver = driver;
+    public ConfigJDBC(String jdbcDriver, String dbUrl, String user, String password) {
+        this.jdbcDriver = jdbcDriver;
         this.dbUrl = dbUrl;
         this.user = user;
         this.password = password;
     }
 
     public ConfigJDBC() {
-        this.driver = "org.h2.Driver";
+        this.jdbcDriver = "org.h2.Driver";
         this.dbUrl = "jdbc:h2:~/clinica;DB_CLOSE_DELAY=-1;INIT=RUNSCRIPT FROM 'src/create.sql'";
         this.user = "sa";
         this.password = "";
@@ -31,15 +31,15 @@ public class ConfigJDBC {
 
     public Connection connectDB() {
         Connection con = null;
-        logger.info("Estabelecendo conexão com banco de dados...");
         try {
+            logger.info("Estabelecendo conexão com banco de dados...");
             con = DriverManager.getConnection(dbUrl, user, password);
-
         } catch(SQLException e) {
             logger.info("Conexão com banco de dados falhou");
             e.printStackTrace();
         }
         logger.info("Conexão estabelecida!");
+
         return con;
     }
 }
