@@ -4,8 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const NotFound = () => {
   const navigate = useNavigate();
-
-  let [contador , setContador] = useState(5);
+  const [contador, setContador] = useState(5);
   useEffect(() => {
     setTimeout(() => {
       setContador(contador-1);
