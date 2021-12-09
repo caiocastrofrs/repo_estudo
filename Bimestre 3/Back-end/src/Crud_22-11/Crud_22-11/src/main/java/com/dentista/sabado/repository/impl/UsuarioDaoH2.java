@@ -27,9 +27,9 @@ public class UsuarioDaoH2 implements IDao<Usuario> {
         Connection con = configJDBC.conectarComBancoDeDados();
         Statement stat = null;
         String query = String.format("INSERT INTO usuarios " +
-                "(nome,email,senha,acesso) " +
-                "VALUES " +
-                "('%s','%s','%s','%s')",usuario.getNome(),usuario.getEmail(),usuario.getSenha(),usuario.getAcesso());
+                "(nome, email, senha, acesso) " +
+                "VALUES ('%s','%s','%s','%s')"
+                ,usuario.getNome(),usuario.getEmail(),usuario.getSenha(),usuario.getAcesso());
         try {
             stat = con.createStatement();
             stat.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
@@ -48,14 +48,14 @@ public class UsuarioDaoH2 implements IDao<Usuario> {
     @Override
     public Optional<Usuario> buscar(Integer id) {
         Connection con = configJDBC.conectarComBancoDeDados();
-        Statement stat;
-        String query = String.format("SELECT * FROM usuarios WHERE id = '%s'",id);
+        Statement stat = null;
+        String query = String.format("SELECT id, nome, email, senha, acesso " +
+                "FROM usuarios WHERE id = '%s'",id);
         Usuario usuario = null;
         try {
             stat = con.createStatement();
-            stat.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
-            ResultSet keys = stat.getGeneratedKeys();
-            if(keys.next()) {
+            ResultSet keys = stat.executeQuery(query);
+            while(keys.next()) {
                 usuario = criarObjetoUsuario(keys);
             }
             stat.close();
@@ -63,6 +63,7 @@ public class UsuarioDaoH2 implements IDao<Usuario> {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
         return usuario != null ? Optional.of(usuario) : Optional.empty();
     }
 
@@ -81,8 +82,7 @@ public class UsuarioDaoH2 implements IDao<Usuario> {
         List<Usuario> usuarios = new ArrayList<>();
         try {
             stat = con.createStatement();
-            stat.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
-            ResultSet keys = stat.getGeneratedKeys();
+            ResultSet keys = stat.executeQuery(query);
             while(keys.next()) {
                 usuarios.add(criarObjetoUsuario(keys));
             }
@@ -98,19 +98,20 @@ public class UsuarioDaoH2 implements IDao<Usuario> {
     public Usuario atualizar(Usuario usuario) {
         Connection con = configJDBC.conectarComBancoDeDados();
         String query = String.format("UPDATE usuarios SET " +
-                "nome = '%s'," + "email = '%s'," + "senha = '%s'," + "acesso = '%s'",
-                usuario.getNome(),usuario.getEmail(),usuario.getSenha(),usuario.getAcesso());
+                "nome = '%s', email = '%s', senha = '%s', acesso = '%s'" +
+                        " WHERE id = '%s'",
+                usuario.getNome(),usuario.getEmail(),usuario.getSenha(),usuario.getAcesso(),usuario.getId());
         execute(con, query);
         return usuario;
     }
 
     public Usuario criarObjetoUsuario(ResultSet rs) throws SQLException{
             return new Usuario(
-            rs.getInt("id"),
-            rs.getString("nome"),
-            rs.getString("email"),
-            rs.getString("senha"),
-            rs.getInt("acesso"));
+            rs.getInt(1),
+            rs.getString(2),
+            rs.getString(3),
+            rs.getString(4),
+            rs.getInt(5));
     }
 
     public void execute(Connection con, String query) {

@@ -21,7 +21,6 @@ public class DentistaController {
     public ResponseEntity<Dentista> registrarDentista(@RequestBody Dentista dentista) {
 
         return ResponseEntity.ok(dentistaService.registrarDentista(dentista));
-
     }
 
     @GetMapping("/{id}")

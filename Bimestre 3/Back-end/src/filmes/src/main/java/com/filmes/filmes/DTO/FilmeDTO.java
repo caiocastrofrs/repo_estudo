@@ -4,21 +4,22 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.filmes.filmes.Model.Filme;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class FilmesDTO {
+public class FilmeDTO {
 
     private String titulo;
     private String categoria;
 
-    public FilmesDTO(String titulo, String categoria) {
+    public FilmeDTO(String titulo, String categoria) {
         this.titulo = titulo;
         this.categoria = categoria;
     }
 
 
-    public void entidadeDTO(Filme filme) {
+    public FilmeDTO entidadeDTO(Filme filme) {
         ObjectMapper mapper = new ObjectMapper();
-        FilmesDTO filmesDTO = mapper.convertValue(filme, FilmesDTO.class);
+        return mapper.convertValue(filme, FilmeDTO.class);
     }
+
     public String getTitulo() {
         return titulo;
     }

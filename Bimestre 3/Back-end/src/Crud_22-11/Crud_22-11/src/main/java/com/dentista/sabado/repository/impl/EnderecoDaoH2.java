@@ -16,7 +16,7 @@ import java.util.Optional;
 @Repository
 public class EnderecoDaoH2 implements IDao<Endereco> {
 
-    ConfigJDBC configJDBC;
+    private final ConfigJDBC configJDBC;
 
     public EnderecoDaoH2(ConfigJDBC configJDBC) {
         this.configJDBC = configJDBC;
@@ -31,7 +31,7 @@ public class EnderecoDaoH2 implements IDao<Endereco> {
                 "VALUES ('%s','%s','%s','%s')",endereco.getRua(),endereco.getNumero(),endereco.getCidade(),endereco.getEstado());
         try {
             stat = con.createStatement();
-            stat.executeUpdate(query,Statement.RETURN_GENERATED_KEYS);
+            stat.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
             ResultSet keys = stat.getGeneratedKeys();
             while(keys.next())
                 endereco.setId(keys.getInt(1));
@@ -52,9 +52,8 @@ public class EnderecoDaoH2 implements IDao<Endereco> {
         Endereco endereco = null;
         try {
             stat = con.createStatement();
-            stat.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
-            ResultSet keys = stat.getGeneratedKeys();
-            while(keys.next()) {
+            ResultSet keys = stat.executeQuery(query);
+            if (keys.next()) {
                 endereco = criarObjectoEndereco(keys);
             }
             stat.close();
@@ -81,8 +80,7 @@ public class EnderecoDaoH2 implements IDao<Endereco> {
         List<Endereco> enderecos = new ArrayList<>();
         try {
             stat = con.createStatement();
-            stat.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
-            ResultSet keys = stat.getGeneratedKeys();
+            ResultSet keys = stat.executeQuery(query);
             while(keys.next()) {
                 enderecos.add(criarObjectoEndereco(keys));
             }
@@ -98,8 +96,9 @@ public class EnderecoDaoH2 implements IDao<Endereco> {
     public Endereco atualizar(Endereco endereco) {
         Connection con = configJDBC.conectarComBancoDeDados();
         String query = String.format("UPDATE enderecos SET " +
-                "rua = '%s',numero = '%s',cidade = '%s',estado = '%s'",
-                endereco.getRua(),endereco.getNumero(),endereco.getCidade(),endereco.getEstado());
+                "rua = '%s',numero = '%s',cidade = '%s',estado = '%s' " +
+                        "WHERE id  = '%s'",
+                endereco.getRua(),endereco.getNumero(),endereco.getCidade(),endereco.getEstado(), endereco.getId());
         execute(con, query);
         return endereco;
     }

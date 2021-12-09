@@ -22,15 +22,15 @@ public class UsuarioController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Usuario> buscar(@PathVariable Integer id) {
+    public ResponseEntity<Usuario> buscarPorId(@PathVariable Integer id) {
         Usuario usuario = usuarioService.buscar(id).orElse(null);
 
         return ResponseEntity.ok(usuario);
     }
 
     @PutMapping()
-    public ResponseEntity<Usuario> atualizar(@RequestBody Usuario usuario) {
-        ResponseEntity<Usuario> response = null;
+    public ResponseEntity<Usuario> atualizarPorId(@RequestBody Usuario usuario) {
+        ResponseEntity<Usuario> response;
 
         if(usuario.getId() != null && usuarioService.buscar(usuario.getId()).isPresent())
             response = ResponseEntity.ok(usuarioService.atualizar(usuario));
@@ -42,7 +42,7 @@ public class UsuarioController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deletar(@PathVariable Integer id) {
-        ResponseEntity<String> response = null;
+        ResponseEntity<String> response;
 
         if(usuarioService.buscar(id).isPresent()) {
             usuarioService.excluir(id);

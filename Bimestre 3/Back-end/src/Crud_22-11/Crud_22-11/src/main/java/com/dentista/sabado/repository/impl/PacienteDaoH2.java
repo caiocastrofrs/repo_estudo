@@ -39,7 +39,6 @@ public class PacienteDaoH2 implements IDao<Paciente> {
                 paciente.getRg(),
                 Util.dateToTimestamp(paciente.getDataCadastro()),
                 paciente.getEndereco().getId());
-
         try {
             stat = con.createStatement();
             stat.executeUpdate(query,Statement.RETURN_GENERATED_KEYS);
@@ -92,8 +91,7 @@ public class PacienteDaoH2 implements IDao<Paciente> {
         List<Paciente> pacientes = new ArrayList<>();
         try {
             stat = con.createStatement();
-            stat.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
-            ResultSet keys = stat.getGeneratedKeys();
+            ResultSet keys = stat.executeQuery(query);
             while(keys.next()) {
                 pacientes.add(criarObjectoPaciente(keys));
             }

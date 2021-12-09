@@ -33,8 +33,6 @@ public class ConsultaController {
             response = ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
 
         return response;
-
-
     }
 
     @GetMapping
