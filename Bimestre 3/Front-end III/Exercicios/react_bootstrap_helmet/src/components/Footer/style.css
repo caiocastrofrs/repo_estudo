@@ -1,0 +1,9 @@
+.footer {
+    height: 150px;
+    background-color: rgba(209, 122, 192, 0.589);
+    text-align: center;
+    
+}
+.footer h2 {
+    color: #3f3f3f;
+}

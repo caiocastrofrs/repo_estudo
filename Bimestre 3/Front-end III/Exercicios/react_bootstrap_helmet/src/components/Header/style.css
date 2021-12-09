@@ -1,0 +1,25 @@
+.header {
+    margin: 5px;
+    background-color: #fae;
+    position: relative;
+    height:100px;
+}
+.lista li {
+    display: inline-block;
+    list-style: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+.lista li:not(:last-child) {margin-right: 20px;}
+.lista {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
